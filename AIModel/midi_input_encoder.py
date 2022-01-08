@@ -1,4 +1,5 @@
-from shared import check_durations, STEP_DURATION
+from utils import check_durations
+from constants import STEP_DURATION
 import music21.stream
 import music21.converter
 import music21.pitch
