@@ -1,7 +1,7 @@
 import os
 import music21.converter
-from constants import RAW_DATASET_PATH
-from utils import check_durations, transpose_music
+from constants import PREPROCESSED_DATASET_DIRECTORY, RAW_DATASET_PATH
+from utils import check_durations, encode_music, transpose_music
 
 
 
@@ -20,23 +20,28 @@ def preprocess_data():
 
 
 
-    for score in scores:
+    for i, score in enumerate(scores):
         
-        # Filter scores with unsupported durations
+        # TODO: PONLO COMO TUT
+        # Filter score with unsupported durations
         duration_complaint = check_durations(score)
         if not duration_complaint: scores.remove(score)
 
 
 
-        # Transpose scores to Cmaj/Amin keys
+        # Transpose score to Cmaj/Amin keys
         score = transpose_music(score)
 
-        # TODO: TE QUEDASTE AQUÍ
+
+        # Encode score in time-series representation
+        encoded_score = encode_music(score)
+        
 
 
-        # Encode songs in time-series representation
-
-        # Save encoded songs (Check if working properly)
+        # Save encoded score 
+        preprocessed_score_path = f'{PREPROCESSED_DATASET_DIRECTORY}/{i}-preprocesssed_score'
+        with open(preprocessed_score_path, 'w') as fp:
+            fp.write(encoded_score)
 
 
 

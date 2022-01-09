@@ -1,5 +1,4 @@
-from utils import check_durations, transpose_music
-from constants import STEP_DURATION
+from utils import check_durations, encode_music, transpose_music
 import music21.stream
 import music21.converter
 import music21.pitch
@@ -14,7 +13,7 @@ MODE = 'major'  # major or minor
 
 
 
-def encode_midi_input():
+def encode_midi_input(key, mode):
 
     # Load the MIDI melody
     raw_input_midi_seed = music21.converter.parse(MIDI_INPUT_PATH) 
@@ -29,37 +28,19 @@ def encode_midi_input():
     
 
     # Transpose the melody
-    # interval = music21.interval.Interval(music21.pitch.Pitch(KEY), music21.pitch.Pitch('C'))
-    # transposed_seed = raw_input_midi_seed.transpose(interval)
-
-    transposed_seed = transpose_music(raw_input_midi_seed, key=KEY, mode=MODE)
+    transposed_seed = transpose_music(raw_input_midi_seed, key=key, mode=mode)
 
 
 
     # Encode seed in time series string
-    encoded_seed = []
-
-    for musical_event in transposed_seed.flat.notesAndRests:
-
-        # Get event type (Note or Rest)
-        if isinstance(musical_event, music21.note.Note):
-            event_type = musical_event.pitch.midi  
-        else: # It's a Rest
-            event_type = "r"
-
-        # Get event duration
-        num_of_steps = int(musical_event.duration.quarterLength / STEP_DURATION) # Event duration
-
-        # Encode event and it's duration
-        for step in range(num_of_steps):
-            if step == 0:
-                encoded_seed.append(event_type) 
-            else:
-                encoded_seed.append("_") 
+    encoded_seed = encode_music(transposed_seed)
 
 
-    # Make string out of whole list list
-    encoded_seed = " ".join(map(str, encoded_seed))
+
+    # TODO: Maybe also encode in integer representation and then one-hot to directly send to
+    # the LSTM.
+
+
 
 
     # TODO: Delete these tests
@@ -73,7 +54,7 @@ def encode_midi_input():
 
 
 if __name__ == "__main__":
-    input_seed = encode_midi_input()
+    input_seed = encode_midi_input(KEY, MODE)
 
 
 

@@ -1,8 +1,9 @@
-from constants import SUPPORTED_DURATIONS
+from constants import SUPPORTED_DURATIONS, STEP_DURATION
 import music21.interval
 import music21.pitch
 import music21.stream
 import music21.key
+import music21.note
 
 
 def check_durations(score):
@@ -18,9 +19,6 @@ def check_durations(score):
 
 def transpose_music(score, key='n/a', mode='n/a'):
     
-    # TODO: Validaciones al user input key y mode (manda basura) (Posiblemente en midi_input_encoder)
-    
-
     # No user input (training)
     if key == 'n/a':
     
@@ -47,7 +45,6 @@ def transpose_music(score, key='n/a', mode='n/a'):
 
     # Transpose
     transposed_score = score.transpose(interval)
-    
     return transposed_score
 
 
@@ -55,9 +52,39 @@ def transpose_music(score, key='n/a', mode='n/a'):
 def get_pitch(key):
 
     if isinstance(key, music21.key.Key): return key.tonic
-
     return music21.pitch.Pitch(key)
 
+
+
+
+
+
+
+
+
+def encode_music(transposed_score):
+
+    # Encode seed in time series string
+    encoded_score = []
+
+    for musical_event in transposed_score.flat.notesAndRests:
+
+        # Get event type (Note or Rest)
+        if isinstance(musical_event, music21.note.Note):
+            event_type = musical_event.pitch.midi  
+        else: # It's a Rest
+            event_type = "r"
+
+        # Get event duration
+        num_of_steps = int(musical_event.duration.quarterLength / STEP_DURATION) # Event duration
+
+        # Encode event and it's duration
+        encoded_score += [event_type] + ["_"] * (num_of_steps - 1)
+
+
+    # Make string out of whole list 
+    encoded_score = " ".join(map(str, encoded_score))
+    return encoded_score
 
 
 

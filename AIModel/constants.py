@@ -14,3 +14,4 @@ STEP_DURATION = 0.25   # In relation to a quarter note (basically a 16th note)
 
 # PATHS
 RAW_DATASET_PATH = 'deutschl/test'
+PREPROCESSED_DATASET_DIRECTORY = 'preprocessed_dataset'
