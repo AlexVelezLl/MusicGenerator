@@ -1,4 +1,4 @@
-from utils import check_durations
+from utils import check_durations, transpose_music
 from constants import STEP_DURATION
 import music21.stream
 import music21.converter
@@ -29,8 +29,10 @@ def encode_midi_input():
     
 
     # Transpose the melody
-    interval = music21.interval.Interval(music21.pitch.Pitch(KEY), music21.pitch.Pitch('C'))
-    transposed_seed = raw_input_midi_seed.transpose(interval)
+    # interval = music21.interval.Interval(music21.pitch.Pitch(KEY), music21.pitch.Pitch('C'))
+    # transposed_seed = raw_input_midi_seed.transpose(interval)
+
+    transposed_seed = transpose_music(raw_input_midi_seed, key=KEY, mode=MODE)
 
 
 

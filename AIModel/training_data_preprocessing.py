@@ -1,7 +1,7 @@
 import os
 import music21.converter
 from constants import RAW_DATASET_PATH
-from utils import check_durations
+from utils import check_durations, transpose_music
 
 
 
@@ -20,21 +20,26 @@ def preprocess_data():
 
 
 
-
-    # Filter scores with unsupported durations
     for score in scores:
-
-        score_is_duration_complaint = check_durations(score)
-        if not score_is_duration_complaint: scores.remove(score)
-
-
-
+        
+        # Filter scores with unsupported durations
+        duration_complaint = check_durations(score)
+        if not duration_complaint: scores.remove(score)
 
 
-    # Transpose scores to Cmaj/Amin keys
+
+        # Transpose scores to Cmaj/Amin keys
+        score = transpose_music(score)
+
+        # TODO: TE QUEDASTE AQUÍ
 
 
-    # Encode songs in time-series representation
+        # Encode songs in time-series representation
+
+        # Save encoded songs (Check if working properly)
+
+
+
 
     # Create look-up table as vocabulary
 

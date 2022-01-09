@@ -16,10 +16,9 @@ def check_durations(score):
 
 
 
-
-def transpose_music_wrapper(score, key='n/a', mode='n/a'):
+def transpose_music(score, key='n/a', mode='n/a'):
     
-    # TODO: Validaciones al user input key y mode (manda basura)
+    # TODO: Validaciones al user input key y mode (manda basura) (Posiblemente en midi_input_encoder)
     
 
     # No user input (training)
@@ -37,13 +36,12 @@ def transpose_music_wrapper(score, key='n/a', mode='n/a'):
         # Get mode
         mode = key.mode
 
-
     # Get interval
     if mode=='major':
-        interval = music21.interval.Interval(music21.pitch.Pitch(key.tonic.step), music21.pitch.Pitch('C'))  
-    elif mode=='minor': # It's minor
-        interval = music21.interval.Interval(music21.pitch.Pitch(key.tonic.step), music21.pitch.Pitch('A'))  
-    else:
+        interval = music21.interval.Interval(get_pitch(key), music21.pitch.Pitch('C'))  
+    elif mode=='minor': 
+        interval = music21.interval.Interval(get_pitch(key), music21.pitch.Pitch('A'))  
+    else: # Modal music, no need to transpose (should not happen or very marginal case)
         interval = music21.interval.Interval("P1") 
 
 
@@ -53,6 +51,12 @@ def transpose_music_wrapper(score, key='n/a', mode='n/a'):
     return transposed_score
 
 
+
+def get_pitch(key):
+
+    if isinstance(key, music21.key.Key): return key.tonic
+
+    return music21.pitch.Pitch(key)
 
 
 
