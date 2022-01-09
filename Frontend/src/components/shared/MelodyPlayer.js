@@ -17,12 +17,28 @@ let pauseGif;
 
 const MelodyPlayer = () => {
   const [playing, setPlaying] = useState(true);
+  const [clickGif, setClickGif] = useState(false);
   const ref = useRef();
+  const player = useRef();
 
   const handlePlayPause = () => {
     setPlaying(!playing);
     const gifPlayer = ref.current.children[0];
     gifPlayer.click();
+    console.log("player", player);
+  };
+
+  const handleClickGif = () => {
+    // if(playing){
+    //   console.log('pause');
+    //   player.current.context.media.pause();
+    // }
+    // else{
+    //   console.log('play');
+    //   player.current.context.media.play();
+    // }
+    // setPlaying(!playing)
+    // setClickGif(!clickGif);
   };
 
   return (
@@ -30,7 +46,13 @@ const MelodyPlayer = () => {
       <Media>
         <div className="media">
           <div className="media-player">
-            <div ref={ref}>
+            <div
+              ref={ref}
+              onClick={handleClickGif}
+              style={{
+                pointerEvents: "none",
+              }}
+            >
               <GifPlayer
                 gif="music-bg.gif"
                 pauseRef={(pause) => {
@@ -44,6 +66,7 @@ const MelodyPlayer = () => {
               src="billie.mp3"
               onPlay={handlePlayPause}
               onPause={handlePlayPause}
+              ref={player}
             />
           </div>
           <div className="media-controls">
