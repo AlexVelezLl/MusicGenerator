@@ -1,0 +1,46 @@
+.seed-music{
+  margin: 0 32px;
+}
+
+.seed-music input[type='file'] {
+  display: none;
+}
+
+.seed-music .key-note{
+  display: flex;
+  margin-top: 16px;
+}
+
+.seed-music .label{
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.seed-music .key-note>div:not(:last-of-type){
+  margin-right: 16px;
+}
+
+.temperature-container{
+  margin-top: 16px;
+}
+
+.seed-music .temperature{
+  display: flex;
+  margin-top: 16px;
+  max-width: 300px;
+}
+
+.seed-music .temperature input{
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 16px;
+  width: 50px;
+}
+
+.seed-music .temperature input:focus{
+  outline: none;
+}

@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .title{
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.header .icon{
+  margin-left: 1rem;
+}
+
+.icon img{
+  width: 150px;
+  height: 150px;
+}
