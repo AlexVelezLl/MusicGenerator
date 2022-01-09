@@ -1,9 +1,17 @@
 import React from 'react';
 
+import './Header.css';
+import logo from '../logo.png';
+
 const Header = () => {
   return (
-    <div>
-      
+    <div className='header'>
+      <div className='title'>
+        MUSIC <br/> GENERATOR
+      </div>
+      <div className='icon'>
+        <img src={logo} alt='Logo' />
+      </div>
     </div>
   );
 };

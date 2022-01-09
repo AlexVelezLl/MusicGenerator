@@ -10,7 +10,9 @@ const App = () => {
       <Header />
       <SeedMusic />
       <div className="generate-music-container">
-
+        <button className='btn'>
+          GENERATE MUSIC
+        </button>
       </div>
       <OutputMusic />
     </div>
