@@ -44,3 +44,11 @@
 .seed-music .temperature input:focus{
   outline: none;
 }
+
+.seed-music-container{
+  display: flex;
+}
+
+.seed-music-options{
+  width: 40%;
+}

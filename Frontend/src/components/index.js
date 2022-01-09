@@ -3,8 +3,10 @@ import './index.css';
 import Header from './Header';
 import SeedMusic from './seedMusic';
 import OutputMusic from './outputMusic';
+import MelodyPlayer from './shared/MelodyPlayer';
 
 const App = () => {
+  
   return (
     <div className="App">
       <Header />

@@ -71,6 +71,7 @@ const SeedMusic = () => {
         </div>
         <div className='seed-music-player'>
           <MelodyPlayer/>
+          
         </div>
       </div>
     </section>
