@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
 import Header from './Header';
 import SeedMusic from './seedMusic';
 import OutputMusic from './outputMusic';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
