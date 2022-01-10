@@ -21,10 +21,15 @@ SUPPORTED_DURATIONS = [
 ]
 STEP_DURATION = 0.25   # In relation to a quarter note (basically a 16th note)
 
-NON_MIDI_SYMBOLS = ['r', '_', '/']
+
+# Pre-processing
+SEQUENCE_LENGTH = 64
+DELIMITER_SYMBOL = '/'
+NON_MIDI_SYMBOLS = ['r', '_', DELIMITER_SYMBOL]
 NUMBER_OF_MIDI_VALUES = 128
 
-# PATHS
-RAW_DATASET_PATH = 'deutschl/test'
-PREPROCESSED_DATASET_DIRECTORY = 'preprocessed_dataset'
-LOOKUP_TABLE_PATH = 'resources/lookup_table.json'
+# Paths
+RAW_DATASET_PATH = 'data/raw_dataset/deutschl/test'
+PREPROCESSED_DATASET_DIRECTORY = 'data/preprocessed_dataset/individual_scores'
+MERGED_DATASET_PATH = 'data/preprocessed_dataset/merged_preprocessed_dataset'
+LOOKUP_TABLE_PATH = 'data/resources/lookup_table.json'

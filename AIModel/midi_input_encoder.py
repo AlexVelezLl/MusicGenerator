@@ -7,11 +7,11 @@ import music21.note
 
 
 # USER INPUTS
-# MIDI_INPUT_PATH = 'inputs/test_melody_Ema.mid'
+# MIDI_INPUT_PATH = 'data/inputs/test_melody_Ema.mid'
 # KEY = 'E'       # 12 Notes
 # MODE = 'major'  # major or minor
 
-MIDI_INPUT_PATH = 'inputs/test_melody_Cmin.mid'
+MIDI_INPUT_PATH = 'data/inputs/test_melody_Cmin.mid'
 KEY = 'C'       # 12 Notes
 MODE = 'minor'  # major or minor
 
@@ -44,6 +44,14 @@ def encode_midi_input(key, mode):
     # the LSTM.
 
 
+    # TODO: Delete tests
+    # General tests
+    # print(f'{MIDI_INPUT_PATH} is duration complaint: {seed_is_duration_complaint}')
+    # raw_input_midi_seed.show()
+    # transposed_seed.show()
+    # print(encoded_seed)
+
+
     return encoded_seed
 
 
@@ -53,32 +61,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-    
-# TODO: Delete tests
-# General tests
-    # print(f'{MIDI_INPUT_PATH} is duration complaint: {seed_is_duration_complaint}')
-    # raw_input_midi_seed.show()
-    # transposed_seed.show()
-    # print(encoded_seed)
-
-
-# Duration complaint
-    # for event in raw_input_midi_seed.flat.notesAndRests:
-    #     print(f'Duration of event {event}: {event.duration.quarterLength}')
-
-
-
-
-
-# TODO:
-# ARTURO:
-# - Probar si Music21 es capaz de redondear correctamente valores cuando Arturo toca a pelo o necesitan ser duraciones grideadas.
-# - Mira si existe alguna armadura en metadata cuando Arturo toca una melodía MIDI en un keyb.
-# - Si sí existen armaduras en MIDI keyb: Mira si el problema de las armaduras se mantiene al transponer (ergo, la armadura del MIDI metadata no coincide con la verdadera armadura)
-# - Es muy posible que Cmaj sea un valor por defecto, vas a tener que hacer que el script pueda setear el key a cmaj (quiero poder .show() y que la armadura sea Cmaj, cuando ya esté transpuesto para evitar problemas futuros)
-# - Consultar qué hacer con el mensaje en caso de que las duraciones no sean aceptables.
-# - Posiblemente hay código reutilizable en el proceso de transposición entre preprocessing y encoding.
-# - Refactor input constants so that it connects with GUI.
