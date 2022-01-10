@@ -1,7 +1,7 @@
 import os
 import music21.converter
 from constants import PREPROCESSED_DATASET_DIRECTORY, RAW_DATASET_PATH
-from utils import check_durations, encode_music, transpose_music
+from utils import check_durations, create_lookup_table, encode_music, transpose_music
 
 
 
@@ -22,19 +22,17 @@ def preprocess_data():
 
     for i, score in enumerate(scores):
         
-        # TODO: PONLO COMO TUT
         # Filter score with unsupported durations
         duration_complaint = check_durations(score)
-        if not duration_complaint: scores.remove(score)
-
+        if not duration_complaint: continue        # Ignores this score, move to the next
 
 
         # Transpose score to Cmaj/Amin keys
-        score = transpose_music(score)
+        transposed_score = transpose_music(score)
 
 
         # Encode score in time-series representation
-        encoded_score = encode_music(score)
+        encoded_score = encode_music(transposed_score)
         
 
 
@@ -44,16 +42,19 @@ def preprocess_data():
             fp.write(encoded_score)
 
 
-
-
-    # Create look-up table as vocabulary
-
-
-
+    # TODO: Delete tests
+    # score = scores[0]
+    # transposed_score = transpose_music(score)
+    # encoded_score = encode_music(transposed_score)
+    # print(f'is duration complaint: {check_durations(score)}')
+    # score.show()
+    # transposed_score.show()
+    # print(encoded_score)
 
 
 if __name__ == '__main__':
-    preprocess_data()
+    # preprocess_data()
+    create_lookup_table()
 
 
 
@@ -63,6 +64,15 @@ if __name__ == '__main__':
 
 
 # TESTS, TODO: Delete this test
+# General tests
+    # score = scores[0]
+    # transposed_score = transpose_music(score)
+    # encoded_score = encode_music(transposed_score)
+    # print(f'is duration complaint: {check_durations(score)}')
+    # score.show()
+    # transposed_score.show()
+    # print(encoded_score)
+
 
 # Check filtering due to durations:
 # scores[0].flat.notesAndRests[7].duration.quarterLength = 0.125

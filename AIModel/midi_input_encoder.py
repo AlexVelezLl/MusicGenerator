@@ -7,9 +7,13 @@ import music21.note
 
 
 # USER INPUTS
-MIDI_INPUT_PATH = 'inputs/test_melody_Emaj.mid'
-KEY = 'E'       # 12 Notes
-MODE = 'major'  # major or minor
+# MIDI_INPUT_PATH = 'inputs/test_melody_Ema.mid'
+# KEY = 'E'       # 12 Notes
+# MODE = 'major'  # major or minor
+
+MIDI_INPUT_PATH = 'inputs/test_melody_Cmin.mid'
+KEY = 'C'       # 12 Notes
+MODE = 'minor'  # major or minor
 
 
 
@@ -17,7 +21,6 @@ def encode_midi_input(key, mode):
 
     # Load the MIDI melody
     raw_input_midi_seed = music21.converter.parse(MIDI_INPUT_PATH) 
-
 
     # Check for non-supported note/rest durations
     seed_is_duration_complaint = check_durations(raw_input_midi_seed)
@@ -41,15 +44,7 @@ def encode_midi_input(key, mode):
     # the LSTM.
 
 
-
-
-    # TODO: Delete these tests
-    # raw_input_midi_seed.show()
-    # transposed_seed.show()
-    # print(encoded_seed)
-
     return encoded_seed
-
 
 
 
@@ -62,7 +57,17 @@ if __name__ == "__main__":
 
 
     
+# TODO: Delete tests
+# General tests
+    # print(f'{MIDI_INPUT_PATH} is duration complaint: {seed_is_duration_complaint}')
+    # raw_input_midi_seed.show()
+    # transposed_seed.show()
+    # print(encoded_seed)
 
+
+# Duration complaint
+    # for event in raw_input_midi_seed.flat.notesAndRests:
+    #     print(f'Duration of event {event}: {event.duration.quarterLength}')
 
 
 
