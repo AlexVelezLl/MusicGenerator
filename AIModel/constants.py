@@ -30,6 +30,6 @@ NUMBER_OF_MIDI_VALUES = 128
 
 # Paths
 RAW_DATASET_PATH = 'data/raw_dataset/deutschl/test'
-PREPROCESSED_DATASET_DIRECTORY = 'data/preprocessed_dataset/individual_scores'
-MERGED_DATASET_PATH = 'data/preprocessed_dataset/merged_preprocessed_dataset'
-LOOKUP_TABLE_PATH = 'data/resources/lookup_table.json'
+PREPROCESSED_DATASET_DESTINATION = 'data/preprocessed_dataset/individual_scores'
+MERGED_DATASET_DESTINATION = 'data/preprocessed_dataset/merged_preprocessed_dataset'
+LOOKUP_TABLE_DESTINATION = 'data/resources/lookup_table.json'

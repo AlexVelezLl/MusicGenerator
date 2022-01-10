@@ -1,4 +1,4 @@
-from constants import LOOKUP_TABLE_PATH, NON_MIDI_SYMBOLS, NUMBER_OF_MIDI_VALUES, SUPPORTED_DURATIONS, STEP_DURATION
+from constants import LOOKUP_TABLE_DESTINATION, NON_MIDI_SYMBOLS, NUMBER_OF_MIDI_VALUES, SUPPORTED_DURATIONS, STEP_DURATION
 import json
 import music21.interval
 import music21.pitch
@@ -102,7 +102,7 @@ def create_lookup_table():
     for i, non_midi_symbol in enumerate(NON_MIDI_SYMBOLS):
         look_up_table[non_midi_symbol] = i + NUMBER_OF_MIDI_VALUES
 
-    with open(LOOKUP_TABLE_PATH, 'w') as fp:
+    with open(LOOKUP_TABLE_DESTINATION, 'w') as fp:
         json.dump(look_up_table, fp, indent=4)
 
 

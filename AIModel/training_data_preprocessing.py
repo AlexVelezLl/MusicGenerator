@@ -1,26 +1,47 @@
 import os
 import music21.converter
 from utils import check_durations, encode_music, transpose_music
-from constants import DELIMITER_SYMBOL, MERGED_DATASET_PATH, PREPROCESSED_DATASET_DIRECTORY, RAW_DATASET_PATH, SEQUENCE_LENGTH
+from constants import DELIMITER_SYMBOL, MERGED_DATASET_DESTINATION, PREPROCESSED_DATASET_DESTINATION, RAW_DATASET_PATH, SEQUENCE_LENGTH
 
 
 
 def preprocess_data():
 
-    scores = []
-
     # Load training data
-    for path, _, files in os.walk(RAW_DATASET_PATH):
+    scores = load_training_data(RAW_DATASET_PATH)
+
+    # Create and save encoding for individual scores
+    preprocess_individual_scores(scores, PREPROCESSED_DATASET_DESTINATION)
+
+    # Create single file dataset by merging all scores
+    create_merged_dataset(PREPROCESSED_DATASET_DESTINATION, MERGED_DATASET_DESTINATION)
+
+
+
+
+
+
+def load_training_data(raw_dataset_path):
+
+    scores = []
+    for path, _, files in os.walk(raw_dataset_path):
 
         for file in files:
 
             if file[-4:] == ".krn":
                 score = music21.converter.parse(os.path.join(path, file))
                 scores.append(score)
+    
+    return scores
 
 
 
-    # Create and save encoding for individual scores
+
+
+
+
+def preprocess_individual_scores(scores, preprocessed_dataset_destination):
+
     for i, score in enumerate(scores):
         
         # Filter score with unsupported durations
@@ -37,18 +58,19 @@ def preprocess_data():
         
 
         # Save encoded score 
-        preprocessed_score_path = f'{PREPROCESSED_DATASET_DIRECTORY}/{i}-preprocessed_score'
+        preprocessed_score_path = f'{preprocessed_dataset_destination}/{i}-preprocessed_score'
         with open(preprocessed_score_path, 'w') as fp:
             fp.write(encoded_score)
 
 
 
 
-    # Create single file dataset by merging all scores
+
+def create_merged_dataset(preprocessed_dataset_path, merged_dataset_destination):
     merged_timeseries = ''
     song_separator = (DELIMITER_SYMBOL + ' ') * SEQUENCE_LENGTH
 
-    for path, _, files in os.walk(PREPROCESSED_DATASET_DIRECTORY):
+    for path, _, files in os.walk(preprocessed_dataset_path):
 
         for file in files:
             file_path = os.path.join(path, file)
@@ -58,21 +80,12 @@ def preprocess_data():
 
             merged_timeseries = merged_timeseries + single_timeseries_score + " " + song_separator
 
-    with open(MERGED_DATASET_PATH, 'w') as fp:
+
+    with open(merged_dataset_destination, 'w') as fp:
         fp.write(merged_timeseries)
 
 
 
-
-
-    # TODO: Delete tests
-    # score = scores[0]
-    # transposed_score = transpose_music(score)
-    # encoded_score = encode_music(transposed_score)
-    # print(f'is duration complaint: {check_durations(score)}')
-    # score.show()
-    # transposed_score.show()
-    # print(encoded_score)
 
 
 if __name__ == '__main__':

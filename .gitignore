@@ -1,5 +1,5 @@
 .DS_Store
 pyrightconfig.json
 commented_tests.py
-__pycache__
+__pycache__/
 
