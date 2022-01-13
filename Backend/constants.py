@@ -17,3 +17,6 @@ modes=[
   'maj',
   'min'
 ]
+
+PATH_MP3 = 'audios/mp3-files/'
+PATH_MIDI = './audios/midi-files/'

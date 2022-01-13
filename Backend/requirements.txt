@@ -1,2 +1,3 @@
 flask
 midi2audio
+flask-cors
