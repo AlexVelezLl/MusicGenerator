@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Media, Player, controls } from "react-media-player";
+
 import "./MelodyPlayer.scss";
 var GifPlayer = require("react-gif-player");
 const {
@@ -15,8 +16,9 @@ const {
 
 let pauseGif;
 
-const MelodyPlayer = () => {
+const MelodyPlayer = (props) => {
   const [playing, setPlaying] = useState(true);
+  
   const ref = useRef();
   const player = useRef();
 
@@ -47,7 +49,7 @@ const MelodyPlayer = () => {
             </div>
 
             <Player
-              src="billie.mp3"
+              src={props.audio}
               onPlay={handlePlayPause}
               onPause={handlePlayPause}
               ref={player}

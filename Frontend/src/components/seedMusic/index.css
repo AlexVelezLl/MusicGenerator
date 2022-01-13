@@ -52,3 +52,10 @@
 .seed-music-options{
   width: 40%;
 }
+
+.loader{
+  position: absolute;
+  z-index: 10;
+  right: 30%;
+  top: 20%;
+}

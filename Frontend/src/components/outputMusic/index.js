@@ -14,7 +14,7 @@ const OutputMusic = () => {
           </button>
         </div>
         <div className='output-music-player'>
-          <MelodyPlayer />
+          
         </div>
       </div>
     </section>
