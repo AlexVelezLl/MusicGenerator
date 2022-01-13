@@ -58,7 +58,7 @@ def preprocess_individual_scores(scores, preprocessed_dataset_destination):
         
 
         # Save encoded score 
-        preprocessed_score_path = f'{preprocessed_dataset_destination}/{i}-preprocessed_score'
+        preprocessed_score_path = f'{preprocessed_dataset_destination}/{i}-preprocessed_score.txt'
         with open(preprocessed_score_path, 'w') as fp:
             fp.write(encoded_score)
 

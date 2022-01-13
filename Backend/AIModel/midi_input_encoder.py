@@ -17,18 +17,15 @@ MODE = 'minor'  # major or minor
 
 
 
-def encode_midi_input(key, mode):
+def encode_midi_input(key, mode, midi_file):
 
     # Load the MIDI melody
-    raw_input_midi_seed = music21.converter.parse(MIDI_INPUT_PATH) 
+    raw_input_midi_seed = music21.converter.parse(midi_file) 
 
     # Check for non-supported note/rest durations
     seed_is_duration_complaint = check_durations(raw_input_midi_seed)
     if(not seed_is_duration_complaint):
-        # TODO: Mandar un mensaje de error que diga que no mande notes/rest con fracciones menor a 16th (fusas, semi-fusas, semi-corcheas con punto y silencios respectivos)
-        pass
-    
-    
+        raise Exception("Input MIDI file contains unsupported note/rest durations.")
 
     # Transpose the melody
     transposed_seed = transpose_music(raw_input_midi_seed, key=key, mode=mode)
@@ -57,7 +54,7 @@ def encode_midi_input(key, mode):
 
 
 if __name__ == "__main__":
-    input_seed = encode_midi_input(KEY, MODE)
-
+    input_seed = encode_midi_input(KEY, MODE, MIDI_INPUT_PATH)
+    print(input_seed)
 
 

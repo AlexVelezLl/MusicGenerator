@@ -123,7 +123,7 @@ $defaultBrowserList : webkit, moz, ms;
 @mixin -range__reset ( $browserList... ) {
 
   @include browser-restrict-to($browserList...){
-    $deep: "/deep/";
+    $deep: "deep";
     &, & #{unquote($deep)} * {
       &, &::before, &::after {
         box-sizing: border-box;
