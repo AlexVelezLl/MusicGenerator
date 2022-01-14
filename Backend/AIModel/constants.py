@@ -29,7 +29,8 @@ NON_MIDI_SYMBOLS = ['r', '_', DELIMITER_SYMBOL]
 NUMBER_OF_MIDI_VALUES = 128
 
 # Paths
-RAW_DATASET_PATH = 'data/raw_dataset/deutschl/test'
-PREPROCESSED_DATASET_DESTINATION = 'data/preprocessed_dataset/individual_scores'
-MERGED_DATASET_DESTINATION = 'data/preprocessed_dataset/merged_preprocessed_dataset'
-LOOKUP_TABLE_DESTINATION = 'data/resources/lookup_table2.json'
+RAW_DATASET_PATH = 'AIModel/data/classical_dataset'
+PREPROCESSED_DATASET_DESTINATION = 'AIModel/data/preprocessed_dataset/individual_scores'
+MERGED_DATASET_DESTINATION = 'AIModel/data/preprocessed_dataset/merged_preprocessed_dataset.txt'
+LOOKUP_TABLE_DESTINATION = 'AIModel/data/resources/lookup_table.json'
+DEFAULT_MODEL_PATH = 'AIModel/model.h5'

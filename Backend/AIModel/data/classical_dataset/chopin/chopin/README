@@ -1,0 +1,150 @@
+Date:    Thu, 9 Mar 95 20:42:35 -0500
+Subject: Dynamic markings for 12 Chopin Etudes.  
+
+For the "**dyn" representation, dynamic markings are very simply
+represented:
+
+<       hairpin crescendo
+>       hairpin diminuendo
+f       forte
+ff      fortissimo
+p       piano
+sfz     sforzando
+cres.	cres.
+dim.	dim.
+
+etc.
+
+The period on a line by itself means that the preceding hairpin
+graphical marking continues into the next measure.
+
+----------------------------------------------
+
+In order to process the files to determine patterns of dynamic
+shading, try the following "pipeline" command.  (Don't be
+intimidated by it's length:
+
+sed '/=/d' chopin01 | rid -GLId | sort | uniq -c | sort -nr | more
+
+This will give you a simple inventory identifying the frequency
+of each type of dynamic marking.  The "sed" command eliminates
+barlines (=), the "rid" command eliminates global (G) and local (L)
+comments, as well as Humdrum interpretations (I) and null data
+tokens (d).  The "sort" command sorts all of the remaining data
+records, and the "uniq" command counts the number of occurrences
+of each uniq data type.  The "sort -nr" sorts the output so that
+the most frequently occurring dynamic markings are displayed first.
+
+For the above command, your results should look like this:
+
+     28	<
+     18	>
+      8	p
+      4	dim.
+      4	cresc.
+      2	pp
+      2	poco cresc.
+      2	f
+      1	smorzando
+      1	ppp
+      1	piu f
+      1	fzp
+
+-- meaning that there are 28 hairpin crescendos in the chopin01 file, etc.
+
+In the above command, the input is a single file "chopin01".  If
+you want to include all of the encoded Chopin works type:
+
+sed '/=/d' chopin* | rid -GLId | sort | uniq -c | sort -nr | more
+
+If you would like to put the results in a file named "results",
+use the following:
+
+sed '/=/d' chopin* | rid -GLId | sort | uniq -c | sort -nr > results
+
+You can also generate inventories for pairs of dynamic markings --
+that is, the frequency of occurrences of
+
+     < followed by >
+     > followed by <
+     f followed by >
+     f followed by p
+     etc.
+
+In order to do this, try the following variant command:
+
+sed '/=/d' chopin01 | rid -GLId | context -n 2 | sort | uniq -c | sort -nr | more
+
+For the file "chopin01" the results should look like this:
+
+     15	< >
+     10	> <
+      7	p <
+      5	> p
+      3	dim. >
+      3	< cresc.
+      3	< <
+      2	pp <
+      2	poco cresc. <
+      2	< p
+      2	< dim.
+      1	smorzando pp
+      1	piu f <
+      1	p cresc.
+      1	fzp <
+      1	f dim.
+      1	f <
+      1	dim. smorzando
+      1	cresc. piu f
+      1	cresc. f
+      1	cresc. dim.
+      1	cresc. <
+      1	> ppp
+      1	> pp
+      1	> poco cresc.
+      1	< poco cresc.
+      1	< fzp
+      1	< f
+
+-- meaning that there are 15 occurrences of a hairpin crescendo
+followed by a hairpin diminuendo (<>) etc.
+
+If you want "triples" or "quadruples", etc., rather than "pairs" simply
+change the number following "context -n".  For example, to generate
+"triples" inventories, type:
+
+sed '/=/d' chopin01 | rid -GLId | context -n 3 | sort | uniq -c | sort -nr | more
+
+"quadruples" inventories, type:
+
+sed '/=/d' chopin01 | rid -GLId | context -n 4 | sort | uniq -c | sort -nr | more
+
+etc.
+
+
+----------------------------------------------
+
+PHRASING
+
+If you are interested in including phrasing information in the
+Humdrum data files (and so using phrases in the inventories),
+use the open and closed braces -- { and } -- to indicate the
+beginning and ends of phrases.  For example, the following
+encoding represents three measures in which a phrase begins
+after a forte marking, and where the phrase contains a
+crescendo/diminuendo hairpin:
+
+**dyn
+=
+f
+{
+=
+<
+>
+=
+}
+*-
+
+
+
+David Huron

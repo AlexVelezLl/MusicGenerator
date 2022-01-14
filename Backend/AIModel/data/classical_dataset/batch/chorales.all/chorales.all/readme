@@ -1,0 +1,313 @@
+
+       + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+       +                                                           +
+       +                  CHORALE HARMONIZATIONS                   +
+       +                                                           +
+       +                          -  by  -                         +
+       +                                                           +
+       +                   Johann Sebastian Bach                   +
+       +                                                           +
+       + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+
+
+This electronic edition of J.S. Bach's chorale harmonizations has been
+produced by the Center for Computer Assisted Research in the Humanities.
+
+The Bach Chorale Harmonizations have a long (though not always distinguished)
+publishing history.  The first collection was assembled by J.P. Kirnberger
+and C.P.E. Bach and published in four volumes in Leipzig between 1784 and
+1787.  This original collection was entitled "Joh. Seb. Bachs vierstimmige
+Choralgesaenge") and included 185 chorales.
+
+A large number of subsequent editions have appeared until modern times
+including editions by Erk and others.  With each subsequent edition,
+additional harmonizations tended to be added so that the well-known
+collection by Riemenschneider (1941) contained no less than 371 works.
+Many of the added items are four-part chorales extracted from larger
+works by Bach.  However, many other items are of questionable origin.
+
+This electronic edition returns to the 185 core chorales assembled by
+Kirnberger and C.P.E Bach.  Specifically, the accompanying files were
+prepared from the Bach-Gesellschaft edition (Vol. 39; pp. 177-276)
+published by Breitkopf and Haertel in Leipzig (1871).  The works
+span BWV numbers 253 to 438 (BWV 279 is not part of the collection).
+
+Machine transcription, proof reading, and proof listening was done by
+Steven Rasmussen under the editorial supervision of Dr. Eleanor
+Selfridge-Field.  Translation to the Humdrum **kern format was carried
+out by Dr. David Huron.  Music entry and editing was done using the "Tenx"
+facilities designed and implemented by Dr. Walter B. Hewlett.
+
+A detailed description of the **kern representation format is given in
+the accompanying file "kern_hlp.txt".
+
+The accompanying files are protected by copyright and are distributed by
+license only.  Refer to the accompanying license statement and original
+license agreement for details.
+
+=================
+DUPLICATE TITLES:
+=================
+
+Bach provided a number of different harmonizations for the same texts.
+Below are listed 22 titles that are harmonized more than once:
+
+            Title                                       Files
+
+ Befiehl du deine Wege                    bwv0270.krn  bwv0271.krn  bwv0272.krn
+ Christ lag in Todesbanden                bwv0277.krn  bwv0278.krn  bwv0301.krn
+ Christus, der ist mein Leben             bwv0281.krn  bwv0282.krn
+ Das alte Jahr vergangen ist              bwv0288.krn  bwv0289.krn
+ Ein' feste Burg ist unser Gott           bwv0302.krn  bwv0303.krn
+ Erbarm' dich mein, o Herre Gott          bwv0305.krn  bwv0328.krn
+ Es woll' uns Gott gena2dig sein          bwv0311.krn  bwv0312.krn
+ Herr, ich habe missgehandelt             bwv0330.krn  bwv0331.krn
+ Herr, wie du willst, so schick's mit mir bwv0339.krn  bwv0359.krn
+ Ich dank' dir, lieber Herre              bwv0347.krn  bwv0348.krn
+ Jesu, der du meine Seele                 bwv0352.krn  bwv0353.krn  bwv0354.krn
+ Jesu, meiner Seelen Wonne                bwv0360.krn  bwv0379.krn
+ Jesus Christus, unser Heiland            bwv0363.krn  bwv0364.krn
+ Lobt Gott, ihr Christen allzugleich      bwv0375.krn  bwv0376.krn
+ Nun lob', mein' Seel', den Herren        bwv0389.krn  bwv0390.krn
+ O Gott, du frommer Gott                  bwv0398.krn  bwv0399.krn
+ O Welt, sieh' hier dein Leben            bwv0393.krn  bwv0394.krn  bwv0395.krn
+ O wie selig seid ihr doch, ihr Frommen   bwv0405.krn  bwv0406.krn
+ Von Gott will ich nicht lassen           bwv0417.krn  bwv0418.krn  bwv0419.krn
+ Warum betru2bst du dich, mein Herz       bwv0420.krn  bwv0421.krn
+ Wenn mein Stu2ndlein vorhanden ist       bwv0428.krn  bwv0429.krn  bwv0430.krn
+ Wenn wir in ho2chsten No2ten sein        bwv0431.krn  bwv0432.krn
+
+N.B. Umlauts in titles are indicated by the presence of the numeral `2'
+     following the modified letter.
+
+======
+INDEX:
+======
+
+ No.          Title                    Filename   Bytes  Checksum A  Checksum B
+
+  1  "Ach bleib' bei uns, Herr ..."   bwv0253.krn  2131   739806962    59926
+  2  "Ach Gott, erho2r' mein Se..."   bwv0254.krn  2436  2240230621     6423
+  3  "Ach Gott und Herr, wie gr..."   bwv0255.krn  1856  1197046218    49900
+  4  "Ach lieben Christen, seid..."   bwv0256.krn  2442  2479261944    14342
+  5  "Wa2r' Gott nicht mit uns ..."   bwv0257.krn  2383  2356270847     9282
+  6  "Wo Gott der Herr nicht be..."   bwv0258.krn  2367   752664913    11109
+  7  "Ach, was soll ich Su2nder..."   bwv0259.krn  2628   286863547    18923
+  8  "Allein Gott in der Ho2h' ..."   bwv0260.krn  2554  1712484994    17000
+  9  "Allein zu dir, Herr Jesu ..."   bwv0261.krn  3299   667435054    58356
+ 10  "Alle Menschen mu2ssen ste..."   bwv0262.krn  2440  4064394126     6680
+ 11  "Alles ist an Gottes Segen..."   bwv0263.krn  2568    50414480    16234
+ 12  "Als der gu2tige Gott"           bwv0264.krn  2053  3108386527    56306
+ 13  "Als Jesus Christus in der..."   bwv0265.krn  1943  1885261281    49413
+ 14  "Als vierzig Tag' nach Ost..."   bwv0266.krn  2726   167375779    19085
+ 15  "An Wasserflu2ssen Babylon..."   bwv0267.krn  3334   416646998    52924
+ 16  "Auf, auf, mein Herz"            bwv0268.krn  2709   396913972    23555
+ 17  "Aus meines Herzens Grunde..."   bwv0269.krn  2735  1458668380    22969
+ 18  "Befiehl du deine Wege"          bwv0270.krn  2539  2110652793    13450
+ 19  "Befiehl du deine Wege"          bwv0271.krn  2481  1834559914    12210
+ 20  "Befiehl du deine Wege"          bwv0272.krn  2393   703576334     6740
+ 21  "Christ, der du bist der h..."   bwv0273.krn  2466  3264375376    13567
+ 22  "Christe, der du bist Tag ..."   bwv0274.krn  2263  4030224919     1957
+ 23  "Christe, du Beistand"           bwv0275.krn  2605  2699450863    14847
+ 24  "Christ ist erstanden"           bwv0276.krn  5252  3673483048     5132
+ 25  "Christ lag in Todesbanden..."   bwv0277.krn  2703  3536552757    21988
+ 26  "Christ lag in Todesbanden..."   bwv0278.krn  2828  2216121354    30567
+ 27  "Christ, unser Herr, zum J..."   bwv0280.krn  2919  2217159352    32147
+ 28  "Christus, der ist mein Le..."   bwv0281.krn  1798   949071161    45302
+ 29  "Christus, der ist mein Le..."   bwv0282.krn  2294   555668919     2222
+ 30  "Christus, der uns selig m..."   bwv0283.krn  3291   377107965    51326
+ 31  "Christus ist erstanden"         bwv0284.krn  2860  2974435576    32356
+ 32  "Da der Herr Christ zu Tis..."   bwv0285.krn  2729   320979462    26694
+ 33  "Danket dem Herren"              bwv0286.krn  1688  1644580816    38760
+ 34  "Dank sei Gott in der Ho2h..."   bwv0287.krn  2496  2230546314    12779
+ 35  "Das alte Jahr vergangen i..."   bwv0288.krn  2652   902882573    17699
+ 36  "Das alte Jahr vergangen i..."   bwv0289.krn  2463  1948132360    10123
+ 37  "Das walt' Gott Vater und ..."   bwv0290.krn  2018  1070223164    55413
+ 38  "Das walt' mein Gott, Vate..."   bwv0291.krn  2288  1627183678    65256
+ 39  "Den Vater dort oben"            bwv0292.krn  2835  3634341922    25801
+ 40  "Der du bist drei in Einig..."   bwv0293.krn  1996  3602793772    50690
+ 41  "Der Tag, der ist so freud..."   bwv0294.krn  3179   112423941    43732
+ 42  "Des heil'gen Geistes reic..."   bwv0295.krn  2391  1467738740     3296
+ 43  "Die Nacht ist kommen"           bwv0296.krn  2314  4143067349     4483
+ 44  "Die Sonn' hat sich mit ih..."   bwv0297.krn  2404  2238508794     8595
+ 45  "Diess sind die heil'gen z..."   bwv0298.krn  2211  3400422854    64062
+ 46  "Dir, dir, Jehova, will ic..."   bwv0299.krn  2636   932970720    22931
+ 47  "Du grosser Schmerzensmann..."   bwv0300.krn  2687  1948533009    20090
+ 48  "Du, o scho2nes Weltgeba2u..."   bwv0301.krn  2672   568963463    20220
+ 49  "Ein' feste Burg ist unser..."   bwv0302.krn  2690   436203143    22968
+ 50  "Ein' feste Burg ist unser..."   bwv0303.krn  2669  1262623514    23239
+ 51  "Eins ist not, ach Herr, d..."   bwv0304.krn  3710  4164509800     1637
+ 52  "Erbarm' dich mein, o Herr..."   bwv0305.krn  3061  1056620109    39649
+ 53  "Erstanden ist der heil'ge..."   bwv0306.krn  2502  2605738474     8212
+ 54  "Es ist gewisslich an der ..."   bwv0307.krn  2416  2549503848    12767
+ 55  "Es spricht der Unweisen M..."   bwv0308.krn  2406   601872452    10526
+ 56  "Es steh'n vor Gottes Thro..."   bwv0309.krn  2737  1710852850    24777
+ 57  "Es wird schier der letzte..."   bwv0310.krn  2196  4238221211    62908
+ 58  "Es woll' uns Gott gena2di..."   bwv0311.krn  3149   908814383    46317
+ 59  "Es woll' uns Gott gena2di..."   bwv0312.krn  3402  4106103035    57365
+ 60  "Fu2r Freuden lasst uns sp..."   bwv0313.krn  2508  1993213866    18005
+ 61  "Gelobet seist du, Jesu Ch..."   bwv0314.krn  2312   569919447     3933
+ 62  "Gib dich zufrieden und se..."   bwv0315.krn  2806  2925540314    31162
+ 63  "Gott, der du selber bist ..."   bwv0316.krn  2574  3668180002    19745
+ 64  "Gott der Vater wohn' uns ..."   bwv0317.krn  3164  4286300698    42375
+ 65  "Gottes Sohn ist kommen"         bwv0318.krn  2313  3905183377     2955
+ 66  "Gott hat das Evangelium"        bwv0319.krn  2387   131429376     8064
+ 67  "Gott lebet noch"                bwv0320.krn  3636  1777464014     1346
+ 68  "Gottlob, es geht nunmehr ..."   bwv0321.krn  2210  1373976910      924
+ 69  "Gott sei gelobet"               bwv0322.krn  3566  1122467072    59709
+ 70  "Gott sei uns gna2dig"           bwv0323.krn  1720  3026828706    38741
+ 71  "Meine Seele erhebet den H..."   bwv0324.krn  1477  4276233255    27163
+ 72  "Heilig, Heilig!"                bwv0325.krn  3152   999322679    46061
+ 73  "Herr Gott, dich loben all..."   bwv0326.krn  2492  4103450918     9016
+ 74  "Fu2r deinen Thron tret' i..."   bwv0327.krn  2010  3620832431    57319
+ 75  "Herr Gott, dich loben wir..."   bwv0328.krn  8930  3657937955    61720
+ 76  "Herr, ich denk' an jene Z..."   bwv0329.krn  2735  1010037790    24064
+ 77  "Herr, ich habe missgehand..."   bwv0330.krn  2291  4089398726     5354
+ 78  "Herr, ich habe missgehand..."   bwv0331.krn  2073  2758366309    58795
+ 79  "Herr Jesu Christ, dich zu..."   bwv0332.krn  2005   265529711    54781
+ 80  "Herr Jesu Christ, du hast..."   bwv0333.krn  2669  1337888006    23121
+ 81  "Herr Jesu Christ, du ho2c..."   bwv0334.krn  2489  1631279859    14301
+ 82  "Herr Jesu Christ, mein's ..."   bwv0335.krn  2043  4232398437    57535
+ 83  "Herr Jesu Christ, wahr, M..."   bwv0336.krn  2161  2710457158    62919
+ 84  "Herr, nun lass in Friede..."    bwv0337.krn  2435   685143587     6283
+ 85  "Herr, straf' mich nicht i..."   bwv0338.krn  2592  3978697365    17775
+ 86  "Herr, wie du willst, so s..."   bwv0339.krn  2666  2314418021    20563
+ 87  "Herzlich lieb hab' ich di..."   bwv0340.krn  3827   446420885    18424
+ 88  "Heut' ist, o Mensch, ein ..."   bwv0341.krn  2121  1736106035    60315
+ 89  "Heut' triumphiret Gottes ..."   bwv0342.krn  2557   903480769    17330
+ 90  "Hilf, Gott, lass mir's ge..."   bwv0343.krn  3018  2122705592    34410
+ 91  "Hilf, Herr Jesu, lass gel..."   bwv0344.krn  2830  1911747980    28738
+ 92  "Ich bin ja, Herr, in dein..."   bwv0345.krn  2551  2394920308    20470
+ 93  "Ich dank' dir Gott fu2r a..."   bwv0346.krn  2776  1139361965    22543
+ 94  "Ich dank' dir, lieber Her..."   bwv0347.krn  2712  2539915245    24489
+ 95  "Ich dank' dir, lieber Her..."   bwv0348.krn  2884  4220299997    33862
+ 96  "Ich dank' dir schon durch..."   bwv0349.krn  2211  4027227053    63240
+ 97  "Ich danke dir, o Gott in ..."   bwv0350.krn  3754   721698014     3277
+ 98  "Ich hab' mein' Sach' Gott..."   bwv0351.krn  2256  1296687979    65325
+ 99  "Jesu, der du meine Seele..."    bwv0352.krn  2650  3954302856    24769
+100  "Jesu, der du meine Seele..."    bwv0353.krn  2675  1879229229    23411
+101  "Jesu, der du meine Seele..."    bwv0354.krn  2793  2403372899    32973
+102  "Jesu, der du selbst so wo..."   bwv0355.krn  3032  3915569439    38476
+103  "Jesu, du mein liebstes le..."   bwv0356.krn  2800  2696744614    27280
+104  "Jesu, Jesu, du bist mein..."    bwv0357.krn  3060   588378020    41473
+105  "Jesu, meine Freude"             bwv0358.krn  2455  2059033319     9699
+106  "Jesu, meiner Seelen Wonne..."   bwv0359.krn  2508  2366977647    16758
+107  "Jesu, meiner Seelen Wonne..."   bwv0360.krn  2408  2488753252    12596
+108  "Jesu, meines Herzens Freu..."   bwv0361.krn  2534   653817228    18463
+109  "Jesu, nun sei gepreiset"        bwv0362.krn  4409  2495252971    45995
+110  "Jesus Christus, unser Hei..."   bwv0363.krn  2492  3443864800    10306
+111  "Jesus Christus, unser Hei..."   bwv0364.krn  2240   258300326    62942
+112  "Jesus, meine Zuversicht..."     bwv0365.krn  2085   282351687    57626
+113  "Ihr Gestirn', ihr hohen L..."   bwv0366.krn  2415  1321560686     6918
+114  "In allen meinen Taten"          bwv0367.krn  2323  1055269580     5693
+115  "In dulci jubilo"                bwv0368.krn  3363   846788024    47685
+116  "Keinen hat Gott verlassen..."   bwv0369.krn  2419  1068609568     7829
+117  "Komm, Gott Scho2pfer, hei..."   bwv0370.krn  2009   196592481    55635
+118  "Kyrie! Gott Vater in Ewig..."   bwv0371.krn  7217  3600039240    39185
+119  "Lass, o Herr, dein Ohr si..."   bwv0372.krn  3082   263973383    39060
+120  "Liebster Jesu, wir sind h..."   bwv0373.krn  2150   771842650    59047
+121  "Lobet den Herren"               bwv0374.krn  3484  4071817526    60619
+122  "Lobt Gott, ihr Christen a..."   bwv0375.krn  2278  2282467981     5261
+123  "Lobt Gott, ihr Christen a..."   bwv0376.krn  2298  1536242086     6282
+124  "Mach's mit mir, Gott, nac..."   bwv0377.krn  2144   819397092    60616
+125  "Mein' Augen schliess' ich..."   bwv0378.krn  2920  2036646482    32601
+126  "Meinen Jesum lass' ich ni..."   bwv0379.krn  2144  3996251242    62474
+127  "Meinen Jesum lass' ich ni..."   bwv0380.krn  2894  3527004922    35035
+128  "Meines Lebens letzte Zeit..."   bwv0381.krn  2925  4019776477    34465
+129  "Mit Fried' und Freud' ich..."   bwv0382.krn  2566  3465993312    15797
+130  "Mitten wir im Leben sind..."    bwv0383.krn  4429  1180730921    39898
+131  "Nicht so traurig, nicht s..."   bwv0384.krn  1965  3103204262    56245
+132  "Nun bitten wir den heilig..."   bwv0385.krn  2638  3741136469    19406
+133  "Nun danket Alle Gott"           bwv0386.krn  2520  2239911232    16742
+134  "Nun freut euch, Gottes Ki..."   bwv0387.krn  2112  3871212567    57506
+135  "Nun freut euch, lieben Ch..."   bwv0388.krn  2577  1652536190    16089
+136  "Nun lob', mein' Seel', de..."   bwv0389.krn  3591  3863528543     8668
+137  "Nun lob', mein' Seel', de..."   bwv0390.krn  3577  2308752224     2301
+138  "Nun preiset alle Gottes B..."   bwv0391.krn  2511   623888127    15006
+139  "Nun ruhen alle Wa2lder"         bwv0392.krn  2497  3299064968    17498
+140  "O Welt, sieh' hier dein L..."   bwv0393.krn  2409   769673586     8687
+141  "O Welt, sieh' hier dein L..."   bwv0394.krn  2702   821514653    24866
+142  "O Welt, sieh' hier dein L..."   bwv0395.krn  2461  3011487214    12664
+143  "Nun sich der Tag geendet ..."   bwv0396.krn  1914  4070463115    50293
+144  "O Ewigkeit, du Donnerwort..."   bwv0397.krn  2537  2260107038    16085
+145  "O Gott, du frommer Gott..."     bwv0398.krn  2839   322923289    27958
+146  "O Gott, du frommer Gott..."     bwv0399.krn  2520  1595891096    16466
+147  "O Herzensangst, o Bangigk..."   bwv0400.krn  2351   608249715     5298
+148  "O Lamm Gottes, unschuldig..."   bwv0401.krn  2631  2878852190    18782
+149  "O Mensch, bewein' dein' S..."   bwv0402.krn  3699  1233769727     4927
+150  "O Mensch, schau Jesum Chr..."   bwv0403.krn  2886  2926350859    25072
+151  "O Traurigkeit, o Herzelei..."   bwv0404.krn  1846   367941436    48589
+152  "O wie selig seid ihr doch..."   bwv0405.krn  2217  3924922750    64837
+153  "O wie selig seid ihr doch..."   bwv0406.krn  2425  1556620602     8832
+154  "O wir armen Su2nder"            bwv0407.krn  4019  3152666197    13282
+155  "Schaut, ihr Su2nder!"           bwv0408.krn  2270  2664313483     1670
+156  "Seelenbra2utigam, Jesu, G..."   bwv0409.krn  2359  2495782405     5700
+157  "Sei gegru2sset, Jesu gu2t..."   bwv0410.krn  2580  3730280715    18911
+158  "Singt dem Herrn ein neues..."   bwv0411.krn  2943  1414304327    34889
+159  "So giebst du nun, mein Je..."   bwv0412.krn  2854   131327201    30074
+160  "Sollt' ich meinem Gott ni..."   bwv0413.krn  4069  3742038017    21477
+161  "Uns ist ein Kindlein heut..."   bwv0414.krn  2179  4257084974    62211
+162  "Valet will ich dir geben..."    bwv0415.krn  2585  2760948891    19803
+163  "Vater unser im Himmelreic..."   bwv0416.krn  2355  2086063882     6020
+164  "Von Gott will ich nicht l..."   bwv0417.krn  2915  2267011424    35099
+165  "Von Gott will ich nicht l..."   bwv0418.krn  2811   834642170    28928
+166  "Von Gott will ich nicht l..."   bwv0419.krn  2479  4255458753    13249
+167  "Warum betru2bst du dich, ..."   bwv0420.krn  2318  4166850378     7507
+168  "Warum betru2bst du dich, ..."   bwv0421.krn  2158   387207983    64637
+169  "Warum sollt' ich mich den..."   bwv0422.krn  2538  1425676978    16428
+170  "Was betru2bst du dich, me..."   bwv0423.krn  3128   412951708    46077
+171  "Was bist du doch, o Seele..."   bwv0424.krn  2086  3262384411    60408
+172  "Was willt du dich, o mein..."   bwv0425.krn  4888  2415099270    63424
+173  "Weltlich Ehr' und zeitlic..."   bwv0426.krn  2951  2637248168    36522
+174  "Wenn ich in Angst und Not..."   bwv0427.krn  2562  1970847219    15761
+175  "Wenn mein Stu2ndlein vorh..."   bwv0428.krn  2829  2570313040    30182
+176  "Wenn mein Stu2ndlein vorh..."   bwv0429.krn  3148   656106176    45387
+177  "Wenn mein Stu2ndlein vorh..."   bwv0430.krn  3213   767974018    48987
+178  "Wenn wir in ho2chsten No2..."   bwv0431.krn  2277  1135467991      722
+179  "Wenn wir in ho2chsten No2..."   bwv0432.krn  2327  1545662433     4689
+180  "Wer Gott vertraut, hat wo..."   bwv0433.krn  3431  1486844328    54918
+181  "Wer nur den lieben Gott l..."   bwv0434.krn  2204  1049498457     1228
+182  "Wie bist du Seele in mir ..."   bwv0435.krn  2509  1146846910    11261
+183  "Wie scho2n leuchtet der M..."   bwv0436.krn  2674   443290305    20512
+184  "Wir glauben all an einen ..."   bwv0437.krn  5777  1312463662    31664
+185  "Wo Gott zum Haus nicht gi..."   bwv0438.krn  2106  3540545570    61463
+
+
+==========
+CHECKSUMS:
+==========
+
+     A "checksum" value is an error-checking mechanism that may assist
+     in determining whether a file has been modified or data garbled
+     due to transmission or faulty storage.  The "checksum A" value
+     uses the POSIX.2 checksum algorithm.  The "checksum B" value uses
+     the CCITT cyclic redundancy check algorithm.  Note that checksum
+     commands differ from system to system.  The above checksums were
+     calculated for DOS-format data.
+
+=======
+ORDERS:
+=======
+
+Copies of the CCARH edition of the Brandenburg Concertos can be ordered
+from:
+
+            Center for Computer Assisted Research
+                in the Humanities
+            525 Middlefield Road, Suite 120
+            Menlo Park, California
+            U.S.A.        94025
+
+Telephone Orders:   (415) 322-3307
+      FAX Orders:   (415) 329-8365
+   E-mail orders:   ccarh@netcom.com
+
+=========
+FEEDBACK:
+=========
+
+Unlike printed musical scores, electronic editions are readily up-dated.
+Should you encounter any errors in the enclosed data files, we'd like to
+hear from you.  Your input can benefit other music scholars.  When re-
+leasing subsequent electronic editions, our policy is to acknowledge by
+name all users who identify unknown representation errors in our data.

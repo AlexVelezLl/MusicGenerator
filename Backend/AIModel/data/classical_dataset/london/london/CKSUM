@@ -1,0 +1,48 @@
+CHEKSUMS for files from /osu/classical/haydn/london
+at https://kern.humdrum.org
+downloaded on Thu Jan 13 21:35:42 PST 2022
+A current version of these files may be downloaded using the address:
+	https://kern.humdrum.org/data?f=zip&l=/osu/classical/haydn/london
+==================================================================
+
+The following lines list the checksum values for all score
+files in this downloaded zip archive.
+
+A "checksum" value is an error-checking mechanism that may
+assist in determining whether a file has been modified or data
+garbled due to transmission or faulty storage.  The "checksum A"
+value uses the POSIX 2 checksum algorithm.  The "checksum B" value
+uses the CCITT cyclic redundancy check algorithm.  
+
+Note that checksum commands will differ for ASCII files formatted
+in DOS/Windows style or Unix/Macintosh formatted text.  The files in
+this ZIP archive were in Unix/Macintosh line formatting style when the
+checksums were compiled.
+
+checksum A   checksum B    filename
+===================================================================
+
+1665627344 125575 sym099a.krn
+3136767153 70967 sym099b.krn
+4072380762 39749 sym099c.krn
+1367750530 123820 sym099d.krn
+1169312871 126479 sym100a.krn
+1108417187 100633 sym100b.krn
+2932404536 37165 sym100c.krn
+2504088194 131002 sym100d.krn
+1347951238 146582 sym101a.krn
+3460982630 105159 sym101b.krn
+3899813338 55079 sym101c.krn
+3347527889 124219 sym101d.krn
+2670858571 144414 sym102a.krn
+1818312536 51009 sym102b.krn
+1154733615 34041 sym102c.krn
+3068373632 118430 sym102d.krn
+3885954989 124492 sym103a.krn
+3111972096 111091 sym103b.krn
+1479497076 33633 sym103c.krn
+1819963003 144196 sym103d.krn
+2043104128 135525 sym104a.krn
+4238940209 82950 sym104b.krn
+4131880645 42918 sym104c.krn
+4269480246 130430 sym104d.krn

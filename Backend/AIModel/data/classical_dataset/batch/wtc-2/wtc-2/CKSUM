@@ -1,0 +1,48 @@
+CHEKSUMS for files from /osu/classical/bach/wtc-2
+at https://kern.humdrum.org
+downloaded on Thu Jan 13 21:34:42 PST 2022
+A current version of these files may be downloaded using the address:
+	https://kern.humdrum.org/data?f=zip&l=/osu/classical/bach/wtc-2
+==================================================================
+
+The following lines list the checksum values for all score
+files in this downloaded zip archive.
+
+A "checksum" value is an error-checking mechanism that may
+assist in determining whether a file has been modified or data
+garbled due to transmission or faulty storage.  The "checksum A"
+value uses the POSIX 2 checksum algorithm.  The "checksum B" value
+uses the CCITT cyclic redundancy check algorithm.  
+
+Note that checksum commands will differ for ASCII files formatted
+in DOS/Windows style or Unix/Macintosh formatted text.  The files in
+this ZIP archive were in Unix/Macintosh line formatting style when the
+checksums were compiled.
+
+checksum A   checksum B    filename
+===================================================================
+
+2211041817 8120 wtc2f01.krn
+3561278136 6288 wtc2f02.krn
+4123696510 8667 wtc2f03.krn
+3881742520 11310 wtc2f04.krn
+2348165956 6852 wtc2f05.krn
+2063216101 6307 wtc2f06.krn
+2127869125 6427 wtc2f07.krn
+3829966600 9531 wtc2f08.krn
+3107153121 6183 wtc2f09.krn
+373403955 12318 wtc2f10.krn
+1039489658 8894 wtc2f11.krn
+2531068040 9092 wtc2f12.krn
+4067041794 8442 wtc2f13.krn
+4241435167 10498 wtc2f14.krn
+120954357 6413 wtc2f15.krn
+444419324 13704 wtc2f16.krn
+4032700544 12331 wtc2f17.krn
+2078386343 12478 wtc2f18.krn
+1973320440 6211 wtc2f19.krn
+1227644712 6545 wtc2f20.krn
+981660943 7250 wtc2f21.krn
+3644528495 14121 wtc2f22.krn
+788140208 12338 wtc2f23.krn
+3471629636 8148 wtc2f24.krn

@@ -18,7 +18,7 @@ def check_durations(score):
 
 
 
-def transpose_music(score, key='n/a', mode='n/a'):
+def transpose_music_to_CA(score, key='n/a', mode='n/a'):
     
     # No user input (training)
     if key == 'n/a':

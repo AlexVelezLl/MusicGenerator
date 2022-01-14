@@ -5,17 +5,18 @@ import music21 as m21
 
 from AIModel.constants import SEQUENCE_LENGTH, LOOKUP_TABLE_DESTINATION
 from AIModel.utils import transpose_music_from_CA
+from AIModel.constants import DEFAULT_MODEL_PATH
 
 class MelodyGenerator:
     """A class that wraps the LSTM model and offers utilities to generate melodies."""
 
-    def __init__(self, model_path="model.h5"):
+    def __init__(self, model_path=DEFAULT_MODEL_PATH):
         """Constructor that initialises TensorFlow model"""
 
         self.model_path = model_path
         self.model = keras.models.load_model(model_path)
 
-        with open('AIModel/'+LOOKUP_TABLE_DESTINATION, "r") as fp: #TODO Hacer mas general esta cosa
+        with open(LOOKUP_TABLE_DESTINATION, "r") as fp:
             self._mappings = json.load(fp)
 
         self._start_symbols = ["/"] * SEQUENCE_LENGTH
@@ -114,25 +115,3 @@ class MelodyGenerator:
                 step_counter += 1
         stream = transpose_music_from_CA(stream, key, mode)
         stream.write(format, file_name)
-
-
-if __name__ == "__main__":
-    mg = MelodyGenerator()
-    seed = "67 _ 67 _ 67 _ _ 65 64 _ 64 _ 64 _ _"
-    seed2 = "67 _ _ _ _ _ 65 _ 64 _ 62 _ 60 _ _ _"
-    melody = mg.generate_melody(seed, 500, SEQUENCE_LENGTH, 0.05)
-    mg.save_melody(seed, file_name="seed.mid")
-
-
-
-
-
-
-
-
-
-
-
-
-
-

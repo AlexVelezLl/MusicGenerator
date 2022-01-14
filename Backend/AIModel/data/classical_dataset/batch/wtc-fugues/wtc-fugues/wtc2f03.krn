@@ -1,0 +1,661 @@
+!!!COM: Bach, Johann Sebastian
+!!!CDT: 1685/3/-1750/7/28
+!!!OPR@@DE: Das wohltemperierte Klavier
+!!!OPR@EN: The Well-Tempered Clavier
+!!!OTL: The Well-Tempered Clavier, Book 2, Fugue 3 in C-sharp major
+!!!SCT: BWV 872b
+!!!parts: 3
+!!!RNB: The texture increases to four voices in the final seven measures.
+**kern	**kern	**kern
+*staff2	*staff1	*staff1
+*clefF4	*clefG2	*clefG2
+*k[f#c#g#d#a#e#b#]	*k[f#c#g#d#a#e#b#]	*k[f#c#g#d#a#e#b#]
+*M4/4	*M4/4	*M4/4
+*C#:	*C#:	*C#:
+*MM86	*MM86	*MM86
+=1	=1	=1
+8r	1r	2r
+8C#	.	.
+8E#L	.	.
+8C#J	.	.
+8G#	.	8r
+8r	.	8g#
+8F#	.	8b#L
+8r	.	8g#J
+=2	=2	=2
+16E#L	8r	8cc#
+16D#	.	.
+[8C#J	8g#	8r
+16C#]L	8e#L	8bn
+16D#	.	.
+16E#	8g#J	8r
+16C#J	.	.
+8F#	8c#	16a#L
+.	.	16g#
+8r	8r	[8f#J
+8FF#	8d#	16f#]L
+.	.	16g#
+8r	8r	16a#
+.	.	16f#J
+=3	=3	=3
+8r	16e#L	8g#
+.	16f#	.
+8C#	[8g#J	8r
+8AA#L	16g#]L	8cc#
+.	16f#	.
+8C#J	16e#	8r
+.	16g#J	.
+8FF#L	16d#L	8cc#
+.	16e#	.
+8AA#J	[8f#J	8r
+8DD#L	16f#]L	8b#
+.	16e#	.
+8GG#J	16d#	8r
+.	16f#J	.
+=4	=4	=4
+8CC#	8e#	8r
+8r	8r	8cc#
+8r	4r	8ee#L
+8c#	.	8cc#J
+8B#L	8r	8gg#
+8d#J	8g#	8r
+8G#	8b#L	8ff#
+8r	8g#J	8r
+=5	=5	=5
+8r	8cc#	16ee#L
+.	.	16dd#
+8C#	8r	[8cc#J
+8E#L	8bn	16cc#]L
+.	.	16dd#
+8C#J	8r	16ee#
+.	.	16cc#J
+8F#	8a#	16r
+.	.	16dd#L
+8r	8r	16ff#
+.	.	16dd#J
+8E#	16r	8gg#
+.	16a#L	.
+8r	16cc##	8r
+.	16a#J	.
+=6	=6	=6
+16r	8dd#	8ff#
+16D#L	.	.
+16BB#	8r	8r
+16D#J	.	.
+8GG##L	16r	8.ee#L
+.	16dd#L	.
+8AA#J	[8cc#J	.
+.	.	16ee#J
+8DD#L	16cc#]L	8ff##L
+.	8b#	.
+8EE#J	.	[8gg#J
+.	16b#J	.
+8CC#L	8.a#L	16gg#]L
+.	.	16gg#
+8DD#J	.	8ff#J
+.	16cc#J	.
+=7	=7	=7
+8r	8b#	8gg#
+8GG#	8r	8r
+8BB#L	4r	4r
+8GG#J	.	.
+8C#	8r	2r
+8r	8G#	.
+8BB#	8B#L	.
+8r	8G#J	.
+=8	=8	=8
+16AA#L	8c#	8r
+16BB#	.	.
+16C#	8r	8e#
+16D#J	.	.
+16E#L	8Bn	8g#L
+16F#	.	.
+32G#	8r	8e#J
+32F#	.	.
+16E#J	.	.
+8F#	16A#L	8a#
+.	16B#	.
+8r	16c##	8r
+.	16d#J	.
+8C##	16e#L	8g#
+.	16f#	.
+8r	32g#	8r
+.	32f#	.
+.	16e#J	.
+=9	=9	=9
+8D#	8f#	16f#L
+.	.	16g#
+8r	8r	16a#
+.	.	16b#J
+8r	8e#	16cc##L
+.	.	16dd#
+8A#	8r	32ee#
+.	.	32dd#
+.	.	16cc##J
+8F#L	8r	8dd#
+8A#J	8a#	8r
+8D#L	8f#L	8r
+8F##J	8a#J	8dd#
+=10	=10	=10
+16G#L	8d#L	8b#L
+16GG#	.	.
+16AA#	8f#J	8dd#J
+16BB#J	.	.
+16C#L	8e#L	8g#L
+16D#	.	.
+32E#	[8g#J	8cc#J
+32D#	.	.
+16C#J	.	.
+8F#L	16g#]L	8a#
+.	16g#	.
+8D#J	16f#	8r
+.	16e#J	.
+8r	16d#L	8b#
+.	16c#	.
+8G#	32B#	8r
+.	32c#	.
+.	16d#J	.
+=11	=11	=11
+8E#L	8G#	8cc#L
+8G#J	8r	8gg#J
+8C#	8r	8ee#L
+8r	8c#	8gg#J
+8r	8e#L	8cc#
+8C#	8c#J	8r
+8E#L	8g#	16r
+.	.	16bnL
+8C#J	8r	16a#
+.	.	16g#J
+=12	=12	=12
+8F#L	16r	[4a#
+.	16g#L	.
+8A#J	16f#	.
+.	16e#J	.
+8D#L	8.f#L	16a#]L
+.	.	16a#
+8F#J	.	8dd#J
+.	[16f#J	.
+8BB#L	16f#]L	[4g#
+.	16f#	.
+8G#J	16e#	.
+.	16d#J	.
+8C#L	8.e#L	16g#]L
+.	.	16g#
+8E#J	.	8cc#J
+.	[16e#J	.
+=13	=13	=13
+8AA#L	16e#]L	[4f#
+.	16e#	.
+8F#J	16d#	.
+.	16c#J	.
+8BB#L	8.d#L	16f#]L
+.	.	16e#
+8D#J	.	8f#J
+.	[16d#J	.
+8GG##L	16d#]L	[4e#
+.	16d#	.
+8EE#J	16c#	.
+.	16B#J	.
+8AA#L	8.c#L	16e#]L
+.	.	16d#
+8GG#J	.	[8e#J
+.	16B#J	.
+=14	=14	=14
+8FF#L	16A#L	8.e#]L
+.	16G##	.
+8EE#J	[8A#J	.
+.	.	16e#J
+4FF#T	16A#]L	4d#
+.	16c#	.
+.	16B#	.
+.	16A#J	.
+8EE#L	8G##	8e#
+8E#J	8r	8r
+8G##L	4r	8r
+8E#J	.	8ee#
+=15	=15	=15
+8A#	8r	8cc#L
+8r	8A#	8ee#J
+8G#	8c##L	8a#
+8r	8A#J	8r
+16F##L	8d#	8r
+16E#	.	.
+[8D#J	8r	8aa#
+16D#]L	8c#	8ff##L
+16E#	.	.
+*strophe	*	*
+*^	*	*
+*S/sic	*S/ossia	*	*
+32F##xx	16F##xx	8r	8aa#J
+32E#xx	.	.	.
+*v	*v	*	*
+*Xstrophe	*	*
+16D#J	.	.
+=16	=16	=16
+8G#	16B#L	8dd#
+.	16A#	.
+8r	[8G#J	8r
+4r	16G#]L	8ee#
+.	16A#	.
+*	*strophe	*
+*	*^	*
+*	*S/sic	*S/ossia	*
+.	32Bnxx	16Bnxx	8r
+.	32A#xx	.	.
+.	16G#J	16G#J	.
+2r	16A#L	16A#L	16ff#L
+.	16B#	16B#	16gg#
+.	32c#xx	16c#xx	[8aa#J
+.	32B#xx	.	.
+.	16A#J	16A#J	.
+.	16B#L	16B#L	16aa#]L
+.	16c#	16c#	16gg#
+.	32d#xx	16d#xx	16ff#
+.	32c#xx	.	.
+*	*v	*v	*
+*	*Xstrophe	*
+.	16B#J	16gg#J
+=17	=17	=17
+8r	[2c#	16ee#L
+.	.	16ff#
+8C#	.	[8gg#J
+8E#L	.	16gg#]L
+.	.	16ff#
+8C#J	.	16ee#
+.	.	16ff#J
+[2G#	8c#]L	16dd#L
+.	.	16gg#
+.	8c#J	16ff#
+.	.	16ee#J
+.	8B#L	16dd#L
+.	.	16cc#
+.	8e#J	32b#
+.	.	32cc#
+.	.	16dd#J
+=18	=18	=18
+8G#]L	4.A#	16cc#L
+.	.	16a#
+8G#J	.	16b#
+.	.	16cc#J
+[4F#	.	16dd#L
+.	.	16ee#
+.	8d#	32ff#
+.	.	32ee#
+.	.	16dd#J
+8F#]L	4G#	16cc#L
+.	.	16b#
+8F#J	.	16a#
+.	.	16g#J
+8E#	16r	8cc#
+.	16g#L	.
+8r	16e#	8r
+.	16g#J	.
+=19	=19	=19
+16r	8c#	8a#
+16A#L	.	.
+16F#	8r	8r
+16A#J	.	.
+8D#	16r	8ff#
+.	16B#L	.
+8r	16G#	8r
+.	16B#J	.
+8C#	8c#L	16r
+.	.	16ff#L
+*	*	*strophe
+*	*	*^
+*	*	*S/sic	*S/ossia
+8r	8G#J	16ee#	16ee#
+.	.	16dd#J	16dd#J
+16r	[4c#	32ee#xxL	16ee#xxL
+.	.	32ff#xx	.
+16C#L	.	16gg#	16gg#
+16E#	.	32cc#xx	16cc#xx
+.	.	32dd#xx	.
+16C#J	.	16ee#J	16ee#J
+=20	=20	=20	=20
+8F#	8c#]L	16a#L	16a#L
+.	.	16ee#	16ee#
+8r	8A#J	16dd#	16dd#
+.	.	16cc#J	16cc#J
+8r	[4F#	32dd#xxL	16dd#xxL
+.	.	32ee#xx	.
+.	.	16ff#	16ff#
+8D#	.	32b#xx	16b#xx
+.	.	32cc#xx	.
+.	.	16dd#J	16dd#J
+8BB#	8F#]L	16g#L	16g#L
+.	.	16dd#	16dd#
+8r	8G#J	16cc#	16cc#
+.	.	16b#J	16b#J
+8r	8E#L	32cc#xxL	16cc#xxL
+.	.	32dd#xx	.
+.	.	16ee#	16ee#
+8C#	[8e#J	32g#xx	16g#xx
+.	.	32a#xx	.
+.	.	16bnJ	16bnJ
+*	*	*v	*v
+*	*	*Xstrophe
+=21	=21	=21
+8FF#L	16e#]L	8.a#L
+.	16c#	.
+8F#J	[8d#J	.
+.	.	16f#J
+8E#L	16d#]L	8.g#L
+.	16B#	.
+8AA#J	[8c#J	.
+.	.	16e#J
+8D#L	16c#]L	8.f#L
+.	16A#	.
+8GG#J	8B#J	.
+.	.	16d#J
+8C#L	16r	[4e#
+.	16c#L	.
+8CC#J	16G#	.
+.	16BnJ	.
+=22	=22	=22
+16FF#L	2A#	4e#_
+16C#	.	.
+16AA#	.	.
+16C#J	.	.
+[4F#	.	16e#]L
+.	.	16d#
+.	.	16f#
+.	.	16d#J
+8F#]L	16r	8B#L
+.	[8.G#	.
+8F#J	.	16B#
+.	.	16d#J
+8E#L	16G#]L	8.g#L
+.	16c#	.
+8G#J	8B#J	.
+.	.	16f#J
+=23	=23	=23
+8C#L	16r	8e#L
+.	[8.c#	.
+8BnJ	.	16e#
+.	.	16g#J
+8A#L	16c#]L	8.cc#L
+.	16f#	.
+8c#J	8e#J	.
+.	.	16bnJ
+8F#L	16r	8a#L
+.	[8.f#	.
+8E#J	.	16a#
+.	.	16cc#J
+8D#L	16f#]L	[4ff#
+.	16bn	.
+8F#J	16a#	.
+.	16dd#J	.
+=24	=24	=24
+8BB#L	8g#	16ff#]L
+.	.	16a#
+8G#J	8r	16b#
+.	.	16cc#J
+8B#L	4r	16dd#L
+.	.	16ee#
+8G#J	.	32ff#
+.	.	32ee#
+.	.	16dd#J
+8c#	16r	16ee#L
+.	16B#L	16ff#
+8r	16c#	16ee#
+.	16d#J	16dd#J
+8A#	16e#L	16cc#L
+.	16f##	16b#
+8r	16g#	32a#
+.	.	32b#
+.	16f##J	16cc#J
+=25	=25	=25
+16r	8g#	8b#L
+16G#L	.	.
+16A#	8r	8gg#J
+16B#J	.	.
+16c#L	4c#	8ee#L
+16d#	.	.
+16e#	.	8gg#J
+16c#J	.	.
+8A#L	4e#	16cc#L
+.	.	16ee#
+8A#J	.	16ff#
+.	.	16gg#J
+8c#L	4c#	16aa#L
+.	.	16bb#
+8A#J	.	16ccc#
+.	.	16aa#J
+=26	=26	=26
+8d#L	8f#	16ff#L
+.	.	16gg#
+8D#J	8r	16ff#
+.	.	16ee#J
+8BB#L	8r	16dd#L
+.	.	16cc#
+8D#J	[8f#	32b#
+.	.	32cc#
+.	.	16dd#J
+8E#L	16f#]L	[2g#
+.	16a#	.
+8EE#J	16g#	.
+.	16f#J	.
+8CC#L	16e#L	.
+.	16d#	.
+*	*strophe	*
+*	*^	*
+*	*S/sic	*S/ossia	*
+8EE#J	32c#xx	16c#xx	.
+.	32d#xx	.	.
+*	*v	*v	*
+*	*Xstrophe	*
+.	16e#J	.
+=27	=27	=27
+4FF#	4A#	16g#]L
+.	.	16c#
+.	.	16d#
+.	.	16e#J
+4D#	8r	16f#L
+.	.	16g#
+.	8d#	16a#
+.	.	16f#J
+4F#	8A#L	16d#L
+.	.	16e#
+.	8d#J	16f#
+.	.	16g#J
+4D#	8F#L	16a#L
+.	.	16b#
+*	*	*strophe
+*	*	*^
+*	*	*S/sic	*S/ossia
+.	[8f#J	32cc#xx	16cc#xx
+.	.	32b#xx	.
+*	*	*v	*v
+*	*	*Xstrophe
+.	.	16a#J
+=28	=28	=28
+[1G#	16f#]L	8b#L
+.	16g#	.
+*	*	*strophe
+*	*	*^
+*	*	*S/sic	*S/ossia
+.	16f#	16dd#xx	8dd#xxJ
+.	16enJ	16cc#xxJ	.
+*	*	*v	*v
+*	*	*Xstrophe
+.	16d#L	8b#L
+.	16c#	.
+.	32B#	8dd#J
+.	32c#	.
+.	16d#J	.
+.	16eL	8g#L
+.	16f#	.
+.	16e	8cc#J
+.	16d#J	.
+.	16c#L	8eenL
+.	16B#	.
+.	32A#	8cc#J
+.	32B#	.
+.	16c#J	.
+*^	*	*
+!! Four-voice material until the end:
+=29	=29	=29	=29
+2r	1G#_	8B#L	16ff#L
+.	.	.	16aan
+.	.	8d#J	16gg#
+.	.	.	16ff#J
+.	.	8c#L	16eenL
+.	.	.	16dd#
+.	.	8enJ	32cc#
+.	.	.	32dd#
+.	.	.	16eeJ
+8A#	.	4r	16f##L
+.	.	.	16g#
+4.c#	.	.	16a#
+.	.	.	16b#J
+.	.	[8eL	16cc#L
+.	.	.	16dd#
+.	.	8f##] 8eJ	32ee
+.	.	.	32dd#
+.	.	.	16cc#J
+=30	=30	=30	=30
+8d#	16G#]L	8g#	8b#L
+.	16A#	.	.
+8r	16G#	8r	8dd#J
+.	16F#J	.	.
+4r	16E#L	8r	[4gg#
+.	16D#	.	.
+.	32C##	8ee#	.
+.	32D#	.	.
+.	16E#J	.	.
+2r	16AA#L	8cc##L	4gg#]
+.	16A#	.	.
+.	16B#	8ee#J	.
+.	16c##J	.	.
+.	16d#L	8a#L	[4ff#
+.	16e#	.	.
+.	32f#	8dd#J	.
+.	32e#	.	.
+.	16d#J	.	.
+=31	=31	=31	=31
+1r	16g#L	8b#L	4ff#]
+.	16f#	.	.
+.	16e#	8dd#J	.
+.	16d#J	.	.
+.	16c#L	8g#L	[4ee#
+.	16Bn	.	.
+.	32A#	8cc#J	.
+.	32B	.	.
+.	16c#J	.	.
+.	8F#L	16a#L	8ee#_L
+.	.	16cc#	.
+.	8DD#J	8f#J	32ee#]
+.	.	.	32dd#
+.	.	.	32cc#
+.	.	.	32bnJ
+.	8FF#L	8r	32a#L
+.	.	.	32g#
+.	.	.	32f#
+.	.	.	32e#
+.	8DD#J	32r	[8f#J
+.	.	32e#L	.
+.	.	32d#	.
+.	.	32c#J	.
+=32	=32	=32	=32
+*	*	*^	*
+8r	[4GG#	16r	16B#L	4f#_
+.	.	[16d#	16d#	.
+32r	.	8d#_	[8G#J	.
+32F#L	.	.	.	.
+32E#	.	.	.	.
+32D#J	.	.	.	.
+32E#L	8GG#_L	8d#]	4G#]	8f#]L
+32D#	.	.	.	.
+32C#	.	.	.	.
+32BB#	.	.	.	.
+8C#J	32GG#]	[8c#	.	[8e#J
+.	32AA#	.	.	.
+.	32GG#	.	.	.
+.	32FF##J	.	.	.
+*	*	*v	*v	*
+8r	[4GG#	8c#_L	32e#]L
+.	.	.	32e#
+.	.	.	32d#
+.	.	.	32c#
+8F##	.	32c#]	[8d#J
+.	.	32c#	.
+.	.	32B#	.
+.	.	32A#J	.
+4G#	32GG#]L	[4B#	4d#_
+.	32AA#	.	.
+.	32BB#	.	.
+.	32C#	.	.
+.	32D#	.	.
+.	32E#	.	.
+.	32F#	.	.
+.	32D#J	.	.
+=33	=33	=33	=33
+8E#L	4r	16B#]L	8d#]L
+.	.	8G#	.
+8EnJ	.	.	[8c#J
+.	.	16F##J	.
+4D#	4GG#	8.G#L	16c#]L
+.	.	.	16c#
+.	.	.	8B#J
+.	.	[16F#J	.
+[2C#	[2CC#	16F#]L	[4c#
+.	.	16F#	.
+.	.	16E#	.
+.	.	16D#J	.
+.	.	[4E#	16c#]L
+.	.	.	16G#
+.	.	.	16Bn
+.	.	.	16G#J
+=34	=34	=34	=34
+2C#_	1CC#_	16E#]L	[4A#
+.	.	16G#	.
+.	.	16F#	.
+.	.	16E#J	.
+.	.	[4F#	16A#]L
+.	.	.	16A#
+.	.	.	16c#
+.	.	.	16A#J
+16C#]L	.	4F#]	[4d#
+16C#	.	.	.
+16BB#	.	.	.
+16AA#J	.	.	.
+4BB#	.	8r	16d#]L
+.	.	.	16e#
+.	.	16r	[8f#J
+.	.	16G#	.
+=35	=35	=35	=35
+4C#	1CC#;]	4A#	16f#]L
+.	.	.	16e#
+.	.	.	16d#
+.	.	.	[16f#J
+4D#	.	4B#	16f#]L
+.	.	.	16a#
+.	.	.	16g#
+.	.	.	16f#J
+2C#;	.	2c#; 2G#;	2e#;
+==	==	==	==
+*-	*-	*-	*-
+!!!OTA: Das wohltemperirte Clavier
+!!!OCY: Deutschland
+!!!PPP: Leipzig
+!!!ODT: 1738//-1742//
+!!!PDT: 1739//-1742//
+!!!AFR: fuga; fugue
+!!!AST: polyphony
+!!!AMT: simple quadruple
+!!!SCA: Bach-Werke-Verzeichnis
+!!!YOR: Bach-Gesellschaft Ausgabe, Band 14
+!!!YOO: Breitkopf und Härtel
+!!!YOY: 1866
+!!!YOE: Franz Kroll (1820-1877)
+!!!AIN: cemba; clavi
+!!!YEC: Copyright 1994, David Huron
+!!!YEM: Rights to all derivative electronic formats reserved.
+!!!ENC: David Huron
+!!!END: 1986/11/26
+!!!EED: David Huron
+!!!YER: 1994/08/10
+!!!EED2: Craig Stuart Sapp (notational niceties)
+!!!EEV: 2020/09/19
+!!!EFL: 27/48
