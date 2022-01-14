@@ -1,4 +1,4 @@
-from utils import check_durations, encode_music, transpose_music
+from AIModel.utils import check_durations, encode_music, transpose_music
 import music21.stream
 import music21.converter
 import music21.pitch

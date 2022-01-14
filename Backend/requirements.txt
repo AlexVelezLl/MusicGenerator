@@ -1,3 +1,5 @@
 flask
 midi2audio
 flask-cors
+music21
+tensorflow

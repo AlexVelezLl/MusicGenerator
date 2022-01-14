@@ -6,7 +6,6 @@ import OutputMusic from './outputMusic';
 import MelodyPlayer from './shared/MelodyPlayer';
 
 const App = () => {
-  
   return (
     <div className="App">
       <Header />

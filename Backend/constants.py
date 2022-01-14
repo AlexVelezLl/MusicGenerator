@@ -14,9 +14,9 @@ notes = [
 ]
 
 modes=[
-  'maj',
-  'min'
+  'major',
+  'minor'
 ]
 
-PATH_MP3 = 'audios/mp3-files/'
-PATH_MIDI = './audios/midi-files/'
+PATH_SEEDS = 'static/audios/seeds/'
+PATH_OUTPUTS = 'static/audios/outputs/'

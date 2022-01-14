@@ -1,4 +1,4 @@
-from constants import LOOKUP_TABLE_DESTINATION, NON_MIDI_SYMBOLS, NUMBER_OF_MIDI_VALUES, SUPPORTED_DURATIONS, STEP_DURATION
+from AIModel.constants import LOOKUP_TABLE_DESTINATION, NON_MIDI_SYMBOLS, NUMBER_OF_MIDI_VALUES, SUPPORTED_DURATIONS, STEP_DURATION
 import json
 import music21.interval
 import music21.pitch
@@ -43,12 +43,21 @@ def transpose_music(score, key='n/a', mode='n/a'):
     else: # Modal music, no need to transpose (should not happen or very marginal case)
         interval = music21.interval.Interval("P1") 
 
-
-    # Transpose
     transposed_score = score.transpose(interval)
     return transposed_score
 
+def transpose_music_from_CA(score, key, mode):
+  if key == 'C' and mode== 'major' or key == 'A' and mode== 'minor':
+    return score
 
+  if mode=='major':
+    interval = music21.interval.Interval(music21.pitch.Pitch('C'), music21.pitch.Pitch(key))
+  elif mode=='minor':
+    interval = music21.interval.Interval(music21.pitch.Pitch('A'), music21.pitch.Pitch(key))
+  else:
+    interval = music21.interval.Interval("P1")
+
+  return score.transpose(interval)
 
 def get_pitch(key):
 
