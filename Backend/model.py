@@ -14,6 +14,6 @@ def generateMelody():
   mg.save_melody(melody, file_name="seed.mid")
 
 if __name__ == "__main__":
-  preprocess()
-  # train()
+  # preprocess()
+  train()
   # generateMelody()

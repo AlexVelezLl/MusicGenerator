@@ -8,7 +8,7 @@ from AIModel.data_preprocessing import convert_songs_to_int
 NUM_UNITS = [256]
 LOSS = "sparse_categorical_crossentropy"
 LEARNING_RATE = 0.001
-EPOCHS = 64
+EPOCHS = 1
 BATCH_SIZE = 64
 
 def train(num_units=NUM_UNITS, loss=LOSS, learning_rate=LEARNING_RATE):
