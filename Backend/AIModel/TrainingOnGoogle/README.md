@@ -38,6 +38,7 @@ Finally, to run the training you can run the following command:
 gcloud ai-platform jobs submit training $JOB_NAME \
   --region us-central1 \
   --master-image-uri $IMAGE_URI \
+  --scale-tier STANDARD_1 \
   -- \
   --model $MODEL_DIR \
   --epochs 64

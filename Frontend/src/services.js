@@ -1,17 +1,42 @@
 const API = "http://127.0.0.1:5000/";
 
-export const transformMidiToMp3 = (input_midi) => {
-  return fetch(API + "midi/convertToMP3", {
+export const transformMidiToMp3 = async (input_midi) => {
+  const response = await fetch(API + "midi/convertToMP3", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    //send content from input input-midi
     body: input_midi,
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      const { url_file } = data;
-      return API + url_file;
-    });
+  });
+  const data = await response.json();
+  return API + data.url_file;
 };
+
+export const generateMelody = async ({
+  seedName,
+  note,
+  mode,
+  temperature,
+}) => {
+  const response = await fetch(API + "generateMelody", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      midi_file: seedName,
+      note,
+      mode,
+      temperature
+    }),
+  });
+  const data = await response.json();
+  if(response.status === 200) {
+    return {
+      midiFile: API + data.midiFile,
+      mp3File: API + data.mp3File,
+    }
+  }
+  throw data.message;
+}

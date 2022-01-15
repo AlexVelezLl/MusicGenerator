@@ -1,0 +1,47 @@
+.seed-music{
+  margin: 0 32px;
+  .seed-music-container{
+    display: flex;
+    position: relative;
+  }
+  input[type='file'] {
+    display: none;
+  }
+  .key-note{
+    display: flex;
+    margin-top: 16px;
+    &>div:not(:last-of-type){
+      margin-right: 16px;
+    }
+  }
+  .label{
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .temperature-container{
+    margin-top: 16px;
+  }
+  .temperature{
+    display: flex;
+    margin-top: 16px;
+    max-width: 300px;
+    align-items: center;
+    input{
+      background-color: transparent;
+      color: var(--text-color);
+      border: none;
+      border-bottom: 1px solid var(--text-color);
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 16px;
+      width: 50px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .seed-music-options{
+    width: calc(50% - 300px);
+    margin-top: 16px;
+  }
+}

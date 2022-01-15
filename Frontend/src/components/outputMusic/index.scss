@@ -1,0 +1,10 @@
+.output-music{
+  margin: 0 32px;
+  .output-music-container{
+    display: flex;
+    position: relative;
+  }
+  .output-music-options{
+    width: calc(50% - 300px);
+  }
+}

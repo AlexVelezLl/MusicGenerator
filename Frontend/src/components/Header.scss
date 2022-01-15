@@ -1,0 +1,18 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .icon{
+    margin-left: 1rem;
+    img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

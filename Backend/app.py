@@ -43,7 +43,7 @@ def generateMelody():
       return jsonify({"message": "Invalid mode"}), 400
 
     temperature = request.json['temperature']
-    if (temperature <= 0.1 or temperature > 1):
+    if (temperature < 0.1 or temperature > 1):
       return jsonify({"message": "Invalid temperature"}), 400
 
     midi_file = request.json['midi_file']

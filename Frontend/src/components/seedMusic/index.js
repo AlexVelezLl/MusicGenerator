@@ -1,19 +1,23 @@
 import React, { useState } from "react";
+import { Bars } from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import MelodyPlayer from "../shared/MelodyPlayer";
-import { modes, notes } from "../../constants";
 import Select from "../shared/Select";
-import { Slider, SliderThumbComponent } from "../shared/Slider";
+import { modes, notes } from "../../constants";
 import { transformMidiToMp3 } from "../../services";
-// import bars from react-loader-spinner
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Bars } from "react-loader-spinner";
+import { Slider, SliderThumbComponent } from "../shared/Slider";
 
-import "./index.css";
-import { fontSize } from "@mui/system";
+import "./index.scss";
 
-const SeedMusic = () => {
-  const [temperature, setTemperature] = useState(20);
+const SeedMusic = (props) => {
+  const {
+    setSeedName,
+    setNote,
+    setMode,
+    temperature, 
+    setTemperature,
+  } = props;
   const [currentAudio, setCurrentAudio] = useState(null);
   const [loading, setLoading] = useState(false);
   const handleTempSliderChange = (_, newValue) => {
@@ -23,8 +27,8 @@ const SeedMusic = () => {
     setTemperature(event.target.value === "" ? "" : Number(event.target.value));
   };
   const handleTempBlur = () => {
-    if (temperature < 0) {
-      setTemperature(0);
+    if (temperature < 10) {
+      setTemperature(10);
     } else if (temperature > 100) {
       setTemperature(100);
     }
@@ -34,29 +38,42 @@ const SeedMusic = () => {
     setLoading(true);
     const input_midi = document.getElementById("input-midi").files[0];
     const url_file = await transformMidiToMp3(input_midi);
+    const seedName = url_file.split("/").pop().replace(".mp3", ".mid");
+    setSeedName(seedName);
     setCurrentAudio(url_file);
     setLoading(false);
-    console.log(currentAudio);
   };
 
   return (
     <section className="seed-music">
       <h2>Seed music</h2>
-
       <div className="seed-music-container">
         <div className="seed-music-options">
           <label htmlFor="input-midi" className="btn">
-            <input id="input-midi" type="file" onChange={handleOnSubmit} />
+            <input 
+              id="input-midi" 
+              type="file" 
+              onChange={handleOnSubmit} 
+              accept=".mid"
+            />
             Select midi file
           </label>
           <div className="key-note">
             <div>
               <div className="label">Note:</div>
-              <Select options={notes} defaultValue={notes[0]} />
+              <Select 
+                options={notes} 
+                defaultValue={notes[0]} 
+                onChange={setNote}
+              />
             </div>
             <div>
               <div className="label">Mode:</div>
-              <Select options={modes} defaultValue={modes[0]} />
+              <Select 
+                options={modes} 
+                defaultValue={modes[0]} 
+                onChange={setMode}
+              />
             </div>
           </div>
           <div className="temperature-container">
@@ -67,39 +84,46 @@ const SeedMusic = () => {
                 onChange={handleTempSliderChange}
                 aria-labelledby="input-slider"
                 components={{ Thumb: SliderThumbComponent }}
+                min={10}
+                max={100}
               />
               <input
                 value={temperature}
                 onChange={handleTempInputChange}
                 onBlur={handleTempBlur}
                 step={10}
-                min={0}
+                min={10}
                 max={100}
                 type="number"
                 aria-labelledby="input-slider"
               />
+              <strong>%</strong>
             </div>
           </div>
         </div>
         <div className="seed-music-player">
-          <div
-            className="loader"
-            style={{
-              visibility: loading ? "visible" : "hidden",
-            }}
-          >
-            <h2>Cargando audio...</h2>
-            <div style={{ marginLeft: "40px" }}>
-              <Bars
-                color="#4CC678"
-                height={100}
-                width={100}
+          {
+            loading &&
+            <div
+              className="loader"
+            >
+              <h2>Loading music...</h2>
+              <div style={{ marginLeft: "40px" }}>
+                <Bars
+                  color="#4CC678"
+                  height={100}
+                  width={100}
 
-                visible={loading}
-              />
+                  visible={loading}
+                />
+              </div>
             </div>
-          </div>
-          {currentAudio && !loading && <MelodyPlayer audio={currentAudio} />}
+          }
+          {
+            !loading && 
+            currentAudio && 
+            <MelodyPlayer audio={currentAudio} />
+          }
         </div>
       </div>
     </section>

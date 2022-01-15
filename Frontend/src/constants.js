@@ -14,6 +14,6 @@ export const notes = [
 ]
 
 export const modes = [
-  { value: 'maj', label: 'Major' },
-  { value: 'min', label: 'Minor' },
+  { value: 'major', label: 'Major' },
+  { value: 'minor', label: 'Minor' },
 ]
