@@ -1,0 +1,5 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: e2-highcpu-32
+  workerType: e2-highcpu-32
+  workerCount: 1

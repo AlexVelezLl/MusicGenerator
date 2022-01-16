@@ -32,5 +32,5 @@ NUMBER_OF_MIDI_VALUES = 128
 RAW_DATASET_PATH = 'AIModel/data/classical_dataset'
 PREPROCESSED_DATASET_DESTINATION = 'AIModel/data/preprocessed_dataset/individual_scores'
 MERGED_DATASET_DESTINATION = 'AIModel/data/preprocessed_dataset/merged_preprocessed_dataset.txt'
-LOOKUP_TABLE_DESTINATION = 'AIModel/data/resources/lookup_table2.json'
-DEFAULT_MODEL_PATH = 'AIModel/model.h5'
+LOOKUP_TABLE_DESTINATION = 'AIModel/data/resources/lookup_table.json'
+DEFAULT_MODEL_PATH = 'AIModel/model_20220115_075609.h5'
