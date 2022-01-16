@@ -14,7 +14,7 @@ def encode_midi_input(key, mode, midi_file):
 
     # Load the MIDI melody
     raw_input_midi_seed = music21.converter.parse(midi_file) 
-
+    
     # Check for non-supported note/rest durations
     seed_is_duration_complaint = check_durations(raw_input_midi_seed)
     if(not seed_is_duration_complaint):
@@ -22,8 +22,6 @@ def encode_midi_input(key, mode, midi_file):
 
     # Transpose the melody
     transposed_seed = transpose_music_to_CA(raw_input_midi_seed, key=key, mode=mode)
-
-
 
     # Encode seed in time series string
     encoded_seed = encode_music(transposed_seed)

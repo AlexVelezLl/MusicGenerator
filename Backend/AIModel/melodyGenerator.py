@@ -80,7 +80,8 @@ class MelodyGenerator:
       format="midi",
       file_name="mel.mid",
       key="C",
-      mode="major"
+      mode="major",
+      tempo=120
     ):
         stream = m21.stream.Stream()
 
@@ -114,4 +115,8 @@ class MelodyGenerator:
             else:
                 step_counter += 1
         stream = transpose_music_from_CA(stream, key, mode)
+
+        tempo_factor = 120 / tempo
+        
+        stream = stream.scaleOffsets(tempo_factor).scaleDurations(tempo_factor)
         stream.write(format, file_name)

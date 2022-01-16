@@ -46,6 +46,10 @@ def generateMelody():
     if (temperature < 0.1 or temperature > 1):
       return jsonify({"message": "Invalid temperature"}), 400
 
+    tempo = int(request.json['tempo'])
+    if (tempo < 20 or tempo > 200):
+      return jsonify({"message": "Invalid tempo"}), 400
+
     midi_file = request.json['midi_file']
     seed_midi_file = PATH_SEEDS + midi_file
     output_midi_file = PATH_OUTPUTS + midi_file
@@ -54,7 +58,7 @@ def generateMelody():
     try: 
       melody = encode_midi_input(note, mode, seed_midi_file)
       generated_melody = mg.generate_melody(melody, temperature=temperature)
-      mg.save_melody(generated_melody, file_name=output_midi_file, key=note, mode=mode)
+      mg.save_melody(generated_melody, file_name=output_midi_file, key=note, mode=mode, tempo=tempo)
     except ValueError as e:
       print(e)
       return jsonify({"message": str(e)}), 400

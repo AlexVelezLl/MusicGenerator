@@ -17,6 +17,7 @@ export const generateMelody = async ({
   note,
   mode,
   temperature,
+  tempo,
 }) => {
   const response = await fetch(API + "generateMelody", {
     method: "POST",
@@ -28,7 +29,8 @@ export const generateMelody = async ({
       midi_file: seedName,
       note,
       mode,
-      temperature
+      temperature,
+      tempo
     }),
   });
   const data = await response.json();

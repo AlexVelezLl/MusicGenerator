@@ -6,5 +6,33 @@
   }
   .output-music-options{
     width: calc(50% - 300px);
+    .dropdown-button{
+      position: relative;
+      display: inline-block;
+      img{
+        width: 18px;
+        height: 18px;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(295deg) brightness(104%) contrast(104%);
+      }
+      .dropdown-items{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        color: black;
+        border: 1px solid #e6e6e6;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 0 4px 0 rgba(0,0,0,0.12);
+        z-index: 1;
+        .dropdown-item{
+          padding: 8px 16px;
+          cursor: pointer;
+          &:hover{
+            background-color: #e6e6e6;
+          }
+        }
+      }
+    }
   }
 }

@@ -4,7 +4,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 import MelodyPlayer from "../shared/MelodyPlayer";
 import Select from "../shared/Select";
-import { modes, notes } from "../../constants";
+import { modes, notes, tempos } from "../../constants";
 import { transformMidiToMp3 } from "../../services";
 import { Slider, SliderThumbComponent } from "../shared/Slider";
 
@@ -15,6 +15,7 @@ const SeedMusic = (props) => {
     setSeedName,
     setNote,
     setMode,
+    setTempo,
     temperature, 
     setTemperature,
   } = props;
@@ -76,6 +77,14 @@ const SeedMusic = (props) => {
               />
             </div>
           </div>
+          <div className="Tempo container">
+              <div className="label">Tempo:</div>
+              <Select 
+                options={tempos} 
+                defaultValue={tempos[4]} // Default 120 BPM 
+                onChange={setTempo}
+              />
+            </div>
           <div className="temperature-container">
             <div className="label">Temperature:</div>
             <div className="temperature">
