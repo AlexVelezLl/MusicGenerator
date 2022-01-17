@@ -52,7 +52,9 @@ def generateMelody():
 
     midi_file = request.json['midi_file']
     seed_midi_file = PATH_SEEDS + midi_file
-    output_midi_file = PATH_OUTPUTS + midi_file
+    timestamp = datetime.datetime.now()
+    timestamp= timestamp.strftime("%Y%m%d%H%M%S")
+    output_midi_file = PATH_OUTPUTS + timestamp + "_" + midi_file
     output_mp3_file = output_midi_file.replace(".mid", ".mp3")
 
     try: 

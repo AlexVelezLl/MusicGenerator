@@ -3,3 +3,7 @@ pyrightconfig.json
 commented_tests.py
 __pycache__/
 
+outputs/*.mid
+
+*.mp3
+

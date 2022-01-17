@@ -38,9 +38,7 @@ def load_training_data(raw_dataset_path):
             if file[-4:] == ".krn":
                 score = music21.converter.parse(os.path.join(path, file))
                 scores.append(score)
-    
     return scores
-
 
 
 
