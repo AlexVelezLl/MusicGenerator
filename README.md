@@ -37,3 +37,8 @@ Once generated the output melody, you can play it, and download it in MIDI or MP
 * Valeria Barzola
 * Juan Nebel
 * Alex Velez
+
+## Credits
+* This proyect's ML implementation is based (and possible) thanks to another RNN-LSTM project by ![musikalkemist](https://github.com/musikalkemist/generating-melodies-with-rnn-lstm)
+* This project also took inspiration primarily from the "Generating Music using LSTM" paper by Priya Varshini G.
+
