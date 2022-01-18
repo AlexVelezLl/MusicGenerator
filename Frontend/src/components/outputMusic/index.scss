@@ -25,9 +25,12 @@
         border-radius: 4px;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.24), 0 0 4px 0 rgba(0,0,0,0.12);
         z-index: 1;
-        .dropdown-item{
+        a.dropdown-item{
           padding: 8px 16px;
           cursor: pointer;
+          text-decoration: none;
+          display: block;
+          color: black;
           &:hover{
             background-color: #e6e6e6;
           }

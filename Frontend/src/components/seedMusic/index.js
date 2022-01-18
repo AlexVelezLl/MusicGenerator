@@ -18,6 +18,7 @@ const SeedMusic = (props) => {
     setTempo,
     temperature, 
     setTemperature,
+    setErrorMessage,
   } = props;
   const [currentAudio, setCurrentAudio] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -36,13 +37,19 @@ const SeedMusic = (props) => {
   };
 
   const handleOnSubmit = async () => {
-    setLoading(true);
-    const input_midi = document.getElementById("input-midi").files[0];
-    const url_file = await transformMidiToMp3(input_midi);
-    const seedName = url_file.split("/").pop().replace(".mp3", ".mid");
-    setSeedName(seedName);
-    setCurrentAudio(url_file);
-    setLoading(false);
+    try{
+      setLoading(true);
+      const input_midi = document.getElementById("input-midi").files[0];
+      const url_file = await transformMidiToMp3(input_midi);
+      const seedName = url_file.split("/").pop().replace(".mp3", ".mid");
+      setSeedName(seedName);
+      setCurrentAudio(url_file);
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      setErrorMessage("There has been an error processing your file");
+      console.log(error);
+    }
   };
 
   return (
@@ -77,11 +84,11 @@ const SeedMusic = (props) => {
               />
             </div>
           </div>
-          <div className="Tempo container">
+          <div className="tempo-container">
               <div className="label">Tempo:</div>
               <Select 
                 options={tempos} 
-                defaultValue={tempos[4]} // Default 120 BPM 
+                defaultValue={tempos[2]} // Default 120 BPM 
                 onChange={setTempo}
               />
             </div>

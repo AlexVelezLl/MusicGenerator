@@ -13,7 +13,7 @@ const customSelectStyles = {
     boxShadow: state.isFocused? 'var(--primary-color) 0 0 0 1px' : 'none',
     backgroundColor: '#C4C4C4',
     borderRadius: 10,
-    width: '100px'
+    width: '120px'
   }),
   singleValue: (provided) => ({
     ...provided,

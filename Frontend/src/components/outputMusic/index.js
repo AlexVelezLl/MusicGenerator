@@ -38,12 +38,20 @@ const OutputMusic = (props) => {
             {
               outputMenuOpen &&
               <div className="dropdown-items">
-                <div className="dropdown-item">
+                <a 
+                  className="dropdown-item" 
+                  href={outputMidi}
+                  target='_blank'
+                >
                   Donwload MIDI
-                </div>
-                <div className="dropdown-item">
+                </a>
+                <a 
+                  className="dropdown-item" 
+                  href={outputMP3}
+                  target='_blank'
+                >
                   Donwload MP3
-                </div>
+                </a>
               </div>
             }
           </div>

@@ -18,7 +18,7 @@ const App = () => {
   const [outputMP3, setOutputMP3] = useState('');
   const [note, setNote] = useState(notes[0]);
   const [mode, setMode] = useState(modes[0]);
-  const [tempo, setTempo] = useState(tempos[4]);
+  const [tempo, setTempo] = useState(tempos[2]); // Default 120 BPM 
   const [temperature, setTemperature] = useState(20);
   const [outputLoading, setOutputLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -39,14 +39,14 @@ const App = () => {
       setOutputMP3(response.mp3File);
       setOutputLoading(false);
     } catch (error) {
-      console.log(error);
       setOutputLoading(false);
       setErrorMessage(error.message);
+      console.log(error);
     }
   }
   return (
     <div className="App">
-      <Collapse in={errorMessage}>
+      <Collapse in={!!errorMessage} className='alert-container'>
         <Alert 
           severity="warning"
           action={
@@ -74,6 +74,7 @@ const App = () => {
         temperature={temperature}
         setTemperature={setTemperature}
         setTempo={setTempo}
+        setErrorMessage={setErrorMessage}
       />
       <div className="generate-music-container">
         <button 
@@ -87,6 +88,7 @@ const App = () => {
         outputMidi={outputMidi}
         outputMP3={outputMP3}
         outputLoading={outputLoading}
+        setErrorMessage={setErrorMessage}
       />
     </div>
   );
